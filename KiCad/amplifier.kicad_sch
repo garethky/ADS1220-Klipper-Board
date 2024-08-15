@@ -4,30 +4,352 @@
 	(generator_version "8.0")
 	(uuid "6105c964-da5e-49db-8fb9-7aa08cf6ee38")
 	(paper "A4")
-	(lib_symbols)
-	(wire
-		(pts
-			(xy 102.87 95.25) (xy 119.38 95.25)
+	(lib_symbols
+		(symbol "Amplifier_Difference:MCP6V92-E_MS"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 22.86 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "MCP6V92-E/MS"
+				(at 22.86 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "MSOP8_MS_MCH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "MCP6V92-E/MS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "MCP6V92-E/MS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MSOP8_MS_MCH MSOP8_MS_MCH-M MSOP8_MS_MCH-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP6V92-E_MS_0_1"
+				(polyline
+					(pts
+						(xy 7.62 -12.7) (xy 38.1 -12.7)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -12.7)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 38.1 -12.7) (xy 38.1 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 38.1 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin output line
+					(at 0 0 0)
+					(length 7.62)
+					(name "VOUTA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "VINA-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "VINA+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 45.72 -7.62 180)
+					(length 7.62)
+					(name "VINB+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 45.72 -5.08 180)
+					(length 7.62)
+					(name "VINB-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 45.72 -2.54 180)
+					(length 7.62)
+					(name "VOUTB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 45.72 0 180)
+					(length 7.62)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a10edb0-8a68-4f52-b6dd-21298b3780fa")
+	)
+	(no_connect
+		(at 153.67 68.58)
+		(uuid "858f26e2-ad4b-443d-8726-fa93c46a3f94")
+	)
+	(no_connect
+		(at 107.95 66.04)
+		(uuid "f3bf6aef-f9e1-4c49-872f-e99e98c38ea0")
 	)
 	(wire
 		(pts
-			(xy 102.87 90.17) (xy 119.38 90.17)
+			(xy 107.95 77.47) (xy 107.95 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9ad2a1e-a7fd-4fe9-aee5-cd12337804cd")
+		(uuid "148439c9-5177-4eea-a499-ea40f0278921")
+	)
+	(wire
+		(pts
+			(xy 105.41 68.58) (xy 107.95 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21fad700-a336-44f8-8ce6-39d2e8b9afd9")
+	)
+	(wire
+		(pts
+			(xy 105.41 63.5) (xy 107.95 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "296a68b8-8fd4-4d8f-83e4-5f8285bd214e")
+	)
+	(wire
+		(pts
+			(xy 158.75 71.12) (xy 153.67 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30701d13-0582-4254-a000-f71358ed0819")
+	)
+	(wire
+		(pts
+			(xy 153.67 57.15) (xy 153.67 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4926d001-0eea-43ed-afb2-fcc8f9bfb2c7")
+	)
+	(wire
+		(pts
+			(xy 157.48 66.04) (xy 153.67 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50293012-a1e8-4cee-8c55-70b5d00fffe6")
 	)
 	(hierarchical_label "AIN1"
 		(shape input)
-		(at 119.38 95.25 0)
+		(at 158.75 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -37,9 +359,9 @@
 		)
 		(uuid "05e679cc-0c35-49d5-9ac5-9735232ced90")
 	)
-	(hierarchical_label "AIN0"
+	(hierarchical_label "+5V"
 		(shape input)
-		(at 119.38 90.17 0)
+		(at 153.67 57.15 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -47,11 +369,35 @@
 			)
 			(justify left)
 		)
+		(uuid "094c7d38-584a-41f8-b86f-5b15adfba8ef")
+	)
+	(hierarchical_label "AIN0"
+		(shape input)
+		(at 105.41 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
 		(uuid "0e4b7566-4177-41b2-884c-7fc2861c74c4")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 107.95 77.47 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "110e2b9b-8a43-4e9f-b110-03c8f0d6a742")
 	)
 	(hierarchical_label "AOUT0"
 		(shape input)
-		(at 102.87 90.17 180)
+		(at 105.41 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -63,14 +409,102 @@
 	)
 	(hierarchical_label "AOUT1"
 		(shape input)
-		(at 102.87 95.25 180)
+		(at 157.48 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "89dc1069-6ec1-41b0-a2ac-41cd17f71125")
+	)
+	(symbol
+		(lib_id "Amplifier_Difference:MCP6V92-E_MS")
+		(at 107.95 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0977653d-9679-4d69-a6ea-e48384e5d2ac")
+		(property "Reference" "U3"
+			(at 130.81 53.34 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MCP6V92-E/MS"
+			(at 130.81 55.88 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "MSOP8_MS_MCH"
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "MCP6V92-E/MS"
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4dac8fd9-a3d2-47a3-b8b8-6514872e94af")
+		)
+		(pin "5"
+			(uuid "842f2b6d-44ae-4265-8457-d0a35b2e8d02")
+		)
+		(pin "6"
+			(uuid "418d5a4d-7dd8-4940-ba48-5c2a700be262")
+		)
+		(pin "2"
+			(uuid "067dadcd-6650-4d50-b3e9-e5f7304c1a92")
+		)
+		(pin "7"
+			(uuid "4aedbfa9-eb81-42a2-934c-9ddde7975e07")
+		)
+		(pin "8"
+			(uuid "f90535bf-44c7-4e37-adf8-45e177dfc068")
+		)
+		(pin "3"
+			(uuid "c18971f1-8459-4b5d-8572-10af09bcd57d")
+		)
+		(pin "4"
+			(uuid "a2084b8f-163c-4a80-adcc-62081ea3b230")
+		)
+		(instances
+			(project ""
+				(path "/5d164854-6659-4076-ba4e-df0771b4723d/0ca0ce53-f671-4079-bef4-c51bb5c4b2f4"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
 	)
 )
