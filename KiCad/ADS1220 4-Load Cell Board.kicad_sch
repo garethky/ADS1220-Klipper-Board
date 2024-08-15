@@ -2140,7 +2140,6 @@
 	(sheet
 		(at 119.38 48.26)
 		(size 34.29 20.32)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2159,7 +2158,7 @@
 			)
 		)
 		(property "Sheetfile" "ADS1220_Converter.kicad_sch"
-			(at 119.38 69.1646 0)
+			(at 119.634 69.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
