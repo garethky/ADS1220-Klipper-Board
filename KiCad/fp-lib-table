@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "TPS62912")(type "KiCad")(uri "/Users/gareth/Downloads/ul_XPS62912RPUR/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "MCP6V92-E-MS")(type "KiCad")(uri "/Users/gareth/Downloads/ul_MCP6V92-E-MS/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "USB4085_GF_A")(type "KiCad")(uri "/Users/gareth/Downloads/USB4085_GF_A/footprints.pretty")(options "")(descr ""))
+  (lib (name "Connector_USB")(type "KiCad")(uri "/Users/gareth/Downloads/Connector_USB.pretty")(options "")(descr ""))
 )
