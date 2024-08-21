@@ -686,7 +686,7 @@
 		)
 		(uuid "05e679cc-0c35-49d5-9ac5-9735232ced90")
 	)
-	(hierarchical_label "+5V"
+	(hierarchical_label "+4V"
 		(shape input)
 		(at 88.9 30.48 90)
 		(fields_autoplaced yes)
