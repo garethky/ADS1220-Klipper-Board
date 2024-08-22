@@ -28,3 +28,4 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+KiCad/\#auto_saved_files\#
