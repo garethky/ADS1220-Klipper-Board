@@ -6,4 +6,5 @@
   (lib (name "Connector_USB")(type "KiCad")(uri "/Users/gareth/Downloads/Connector_USB.pretty")(options "")(descr ""))
   (lib (name "PTS645 Switch")(type "KiCad")(uri "/Users/gareth/Downloads/PTS645 Switch/footprints.pretty")(options "")(descr ""))
   (lib (name "PA4332-222NLT")(type "KiCad")(uri "/Users/gareth/Downloads/ul_PA4332-222NLT/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
 )

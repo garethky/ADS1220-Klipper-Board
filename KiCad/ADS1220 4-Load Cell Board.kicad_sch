@@ -1078,6 +1078,16 @@
 		)
 		(uuid "065a1eb4-0216-4179-a9e8-d6bd37926c56")
 	)
+	(wire
+		(pts
+			(xy 224.79 71.12) (xy 232.41 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06982666-967f-40dc-968b-954baaae1f6f")
+	)
 	(bus
 		(pts
 			(xy 205.74 104.14) (xy 205.74 130.81)
@@ -1130,7 +1140,7 @@
 	)
 	(bus
 		(pts
-			(xy 186.69 69.85) (xy 217.17 69.85)
+			(xy 186.69 71.12) (xy 217.17 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1187,16 +1197,6 @@
 			(type default)
 		)
 		(uuid "211d9053-4714-4017-a5ca-2fbac89afa7c")
-	)
-	(wire
-		(pts
-			(xy 224.79 63.5) (xy 229.87 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2387a33c-6700-4c15-bae7-16e7ed451eec")
 	)
 	(wire
 		(pts
@@ -1450,7 +1450,7 @@
 	)
 	(bus
 		(pts
-			(xy 186.69 69.85) (xy 186.69 82.55)
+			(xy 186.69 71.12) (xy 186.69 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1638,6 +1638,16 @@
 		)
 		(uuid "8f7cf967-a20e-4147-885a-f290f3df0003")
 	)
+	(wire
+		(pts
+			(xy 224.79 63.5) (xy 229.87 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9102654a-a49b-4459-8bd2-4e1b401647d8")
+	)
 	(bus
 		(pts
 			(xy 186.69 82.55) (xy 186.69 96.52)
@@ -1757,16 +1767,6 @@
 			(type default)
 		)
 		(uuid "b37a9853-8653-4b90-90f1-38890671b632")
-	)
-	(wire
-		(pts
-			(xy 224.79 69.85) (xy 232.41 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b383eda4-9e3d-4eb5-a045-4309c4b91ba2")
 	)
 	(bus
 		(pts
@@ -2000,7 +2000,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 69.85) (xy 232.41 62.23)
+			(xy 232.41 71.12) (xy 232.41 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3301,7 +3301,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Ferrite")
-		(at 220.98 69.85 90)
+		(at 220.98 71.12 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3309,7 +3309,7 @@
 		(dnp no)
 		(uuid "98581e6a-6d03-4162-9dfb-0ec26371354b")
 		(property "Reference" "L22"
-			(at 220.726 65.532 90)
+			(at 220.726 66.802 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3317,7 +3317,7 @@
 			)
 		)
 		(property "Value" "120Ω @ 100MHz / 3A"
-			(at 220.98 67.31 90)
+			(at 220.98 68.58 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -3325,7 +3325,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
-			(at 220.98 69.85 0)
+			(at 220.98 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3334,7 +3334,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 220.98 69.85 0)
+			(at 220.98 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3343,7 +3343,7 @@
 			)
 		)
 		(property "Description" "Inductor with ferrite core"
-			(at 220.98 69.85 0)
+			(at 220.98 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
