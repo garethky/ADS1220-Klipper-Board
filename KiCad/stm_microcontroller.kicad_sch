@@ -6093,8 +6093,8 @@
 				)
 			)
 		)
-		(property "Value" "1.326k"
-			(at 153.67 62.23 90)
+		(property "Value" "1.1k"
+			(at 153.67 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
