@@ -1090,6 +1090,16 @@
 	)
 	(bus
 		(pts
+			(xy 162.56 82.55) (xy 186.69 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0757dbcf-9809-4d14-bd6c-bc37d55440f8")
+	)
+	(bus
+		(pts
 			(xy 205.74 104.14) (xy 205.74 130.81)
 		)
 		(stroke
@@ -1097,16 +1107,6 @@
 			(type default)
 		)
 		(uuid "0b54699d-3a4d-4463-a077-58765b88a658")
-	)
-	(bus
-		(pts
-			(xy 177.8 63.5) (xy 193.04 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b6d0187-f546-481e-8088-1600ba53a428")
 	)
 	(wire
 		(pts
@@ -1317,6 +1317,16 @@
 			(type default)
 		)
 		(uuid "3ae2fbea-fa31-417a-9de6-4c752f508466")
+	)
+	(bus
+		(pts
+			(xy 162.56 46.99) (xy 152.4 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f03f5a5-9011-40f7-a34e-11deca3d48b1")
 	)
 	(wire
 		(pts
@@ -1728,6 +1738,16 @@
 		)
 		(uuid "a838e94e-66c3-40a1-85d6-11aca8b452f5")
 	)
+	(bus
+		(pts
+			(xy 168.91 63.5) (xy 193.04 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9ea2f91-cbe2-4a34-b31e-dd6c6de8eec2")
+	)
 	(wire
 		(pts
 			(xy 109.22 44.45) (xy 118.11 44.45)
@@ -1737,6 +1757,16 @@
 			(type default)
 		)
 		(uuid "aa107429-fdc2-4621-a909-9970e722d580")
+	)
+	(bus
+		(pts
+			(xy 168.91 43.18) (xy 152.4 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa510695-1df8-444d-b54c-55cd7c309abe")
 	)
 	(bus
 		(pts
@@ -1767,16 +1797,6 @@
 			(type default)
 		)
 		(uuid "b37a9853-8653-4b90-90f1-38890671b632")
-	)
-	(bus
-		(pts
-			(xy 182.88 82.55) (xy 186.69 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6eb9bfa-c0be-4352-b5da-9454f00a1254")
 	)
 	(bus
 		(pts
@@ -1838,6 +1858,16 @@
 		)
 		(uuid "c84ca6d5-2f6a-482b-a583-ce88038eeec5")
 	)
+	(bus
+		(pts
+			(xy 168.91 63.5) (xy 168.91 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c94f6763-1a6b-411b-af6f-790e5a22bd3f")
+	)
 	(wire
 		(pts
 			(xy 224.79 137.16) (xy 236.22 137.16)
@@ -1897,6 +1927,16 @@
 			(type default)
 		)
 		(uuid "d6986450-e4e4-4d76-99ce-16acb184c8ff")
+	)
+	(bus
+		(pts
+			(xy 162.56 82.55) (xy 162.56 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d92a828f-199d-4923-a5de-fd3ecbd14071")
 	)
 	(wire
 		(pts
@@ -1967,16 +2007,6 @@
 			(type default)
 		)
 		(uuid "eac4cba2-fc1e-4aba-99e4-17ee131c4448")
-	)
-	(bus
-		(pts
-			(xy 177.8 69.85) (xy 177.8 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eada4f77-fead-4467-9a3c-d6669eb423e4")
 	)
 	(bus
 		(pts
@@ -2301,7 +2331,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-A-1_1x04_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 241.3 57.15 0)
 			(effects
 				(font
@@ -2844,7 +2874,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-A-1_1x04_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 241.3 83.82 0)
 			(effects
 				(font
@@ -2986,7 +3016,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-A-1_1x04_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 241.3 137.16 0)
 			(effects
 				(font
@@ -3163,72 +3193,6 @@
 			(project "ADS1220 4-Load Cell Board"
 				(path "/5d164854-6659-4076-ba4e-df0771b4723d"
 					(reference "L5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 177.8 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8724a0f3-9a90-4923-b4a0-dc65cfadd84b")
-		(property "Reference" "#PWR045"
-			(at 177.8 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 179.832 74.168 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0f28ffb-ff07-4a3d-a006-47e986136025")
-		)
-		(instances
-			(project "ADS1220 4-Load Cell Board"
-				(path "/5d164854-6659-4076-ba4e-df0771b4723d"
-					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -3700,71 +3664,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+4V")
-		(at 182.88 82.55 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d410afdb-71f3-4f59-bc37-7804e477e93f")
-		(property "Reference" "#PWR036"
-			(at 186.69 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+4V"
-			(at 178.562 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+4V\""
-			(at 182.88 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f7899020-e319-4c88-88a9-494c70bc8a0d")
-		)
-		(instances
-			(project "ADS1220 4-Load Cell Board"
-				(path "/5d164854-6659-4076-ba4e-df0771b4723d"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 134.62 60.96 180)
 		(unit 1)
@@ -3925,7 +3824,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-A-1_1x04_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 241.3 110.49 0)
 			(effects
 				(font
@@ -4643,6 +4542,26 @@
 				(justify left)
 			)
 			(uuid "443ebde6-adea-4ed4-90ec-3bde068923d8")
+		)
+		(pin "REF0" input
+			(at 152.4 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fde3e974-cb8e-41b5-9d11-2e07a98f3e63")
+		)
+		(pin "REF1" input
+			(at 152.4 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9d791a4b-0d77-4207-b962-baf62f1ef7a2")
 		)
 		(instances
 			(project "ADS1220 4-Load Cell Board"

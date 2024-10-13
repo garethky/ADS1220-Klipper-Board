@@ -843,7 +843,7 @@
 		(dnp no)
 		(uuid "8802650b-859c-4284-9c4e-6ea084db6aaf")
 		(property "Reference" "R19"
-			(at 34.036 38.1 0)
+			(at 33.782 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)

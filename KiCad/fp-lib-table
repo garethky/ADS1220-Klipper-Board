@@ -7,4 +7,5 @@
   (lib (name "PTS645 Switch")(type "KiCad")(uri "/Users/gareth/Downloads/PTS645 Switch/footprints.pretty")(options "")(descr ""))
   (lib (name "PA4332-222NLT")(type "KiCad")(uri "/Users/gareth/Downloads/ul_PA4332-222NLT/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
+  (lib (name "STM32F103C8T6TR")(type "KiCad")(uri "/Users/gareth/Downloads/STM32F103C8T6TR/KiCADv6/footprints.pretty")(options "")(descr ""))
 )
