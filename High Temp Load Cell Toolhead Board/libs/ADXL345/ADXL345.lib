@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model ADXL345
+#/249561/1549109/2.50/14/3/Accelerometer
+DEF ADXL345 AC 0 30 Y Y 1 F N
+F0 "AC" 1850 800 50 H V L CNN
+F1 "ADXL345" 1850 700 50 H V L CNN
+F2 "CC-14-1" 1850 600 50 H I L CNN
+F3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf" 1850 500 50 H I L CNN
+F4 "3-Axis Accelerometer IC" 1850 400 50 H I L CNN "Description"
+F5 "" 1850 300 50 H I L CNN "Height"
+F6 "N/A" 1850 200 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/ADXL345?qs=5aG0NVq1C4y%252BItyqaAF9pQ%3D%3D" 1850 100 50 H I L CNN "Mouser Price/Stock"
+F8 "Analog Devices" 1850 0 50 H I L CNN "Manufacturer_Name"
+F9 "ADXL345" 1850 -100 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VDD_I/O 1 0 0 200 R 50 50 0 0 W
+X GND_1 2 0 -100 200 R 50 50 0 0 W
+X RESERVED_1 3 0 -200 200 R 50 50 0 0 P
+X GND_2 4 0 -300 200 R 50 50 0 0 W
+X GND_3 5 0 -400 200 R 50 50 0 0 W
+X VS 6 0 -500 200 R 50 50 0 0 P
+X ~CS 7 1000 -1100 200 U 50 50 0 0 I
+X INT1 8 2000 -500 200 L 50 50 0 0 I
+X INT2 9 2000 -400 200 L 50 50 0 0 I
+X NC 10 2000 -300 200 L 50 50 0 0 N
+X RESERVED_2 11 2000 -200 200 L 50 50 0 0 P
+X SDO/ALT_ADDRESS 12 2000 -100 200 L 50 50 0 0 P
+X SDA/SDI/SDIO 13 2000 0 200 L 50 50 0 0 B
+X SCL/SCLK 14 1000 800 200 D 50 50 0 0 I
+P 5 0 1 6 200 600 1800 600 1800 -900 200 -900 200 600 N
+ENDDRAW
+ENDDEF
+#
+#End Library

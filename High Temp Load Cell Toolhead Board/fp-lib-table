@@ -1,0 +1,10 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TPSM861252RDXR")(type "KiCad")(uri "/Users/gareth/Downloads/TPSM861252RDXR")(options "")(descr ""))
+  (lib (name "TPSM861_snap")(type "KiCad")(uri "/Users/gareth/Downloads/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "TPSM861_ultra")(type "KiCad")(uri "/Users/gareth/Downloads/TPSM861253RDXR-ultra")(options "")(descr ""))
+  (lib (name "Level Shifter 74LVC1G17GV_125")(type "KiCad")(uri "${KIPRJMOD}/libs/Level Shifter 74LVC1G17GV_125/Level Shifter 74LVC1G17GV_125.pretty")(options "")(descr ""))
+  (lib (name "ADXL345")(type "KiCad")(uri "${KIPRJMOD}/libs/ADXL345/ADXL345.pretty")(options "")(descr ""))
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/libs/Molex CLIK-Mate/Library.pretty")(options "")(descr ""))
+  (lib (name "Molex CLIK-Mate")(type "KiCad")(uri "${KIPRJMOD}/libs/Molex CLIK-Mate/Molex CLIK-Mate.pretty")(options "")(descr ""))
+)
