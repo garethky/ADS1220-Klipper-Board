@@ -1,6 +1,7 @@
 (sym_lib_table
   (version 7)
   (lib (name "Project_Symbols")(type "KiCad")(uri "${KIPRJMOD}/Project_Symbols.kicad_sym")(options "")(descr ""))
-  (lib (name "TPSM861_ultra")(type "KiCad")(uri "/Users/gareth/Downloads/TPSM861253RDXR-ultra/TPSM861253RDXR.kicad_sym")(options "")(descr ""))
-  (lib (name "TPSM861_snap")(type "KiCad")(uri "/Users/gareth/Downloads/KiCADv6/2024-11-23_07-13-58.kicad_sym")(options "")(descr ""))
+  (lib (name "AQ4020-01FTG")(type "KiCad")(uri "${KIPRJMOD}/libs/AQ4020-01FTG/AQ4020-01FTG.kicad_sym")(options "")(descr ""))
+  (lib (name "TLVM23615RDNR")(type "KiCad")(uri "${KIPRJMOD}/libs/ULTRA_TLVM23615RDNR/2024-12-20_22-14-55.kicad_sym")(options "")(descr ""))
+  (lib (name "SN74LVC2G17DSFR")(type "KiCad")(uri "${KIPRJMOD}/libs/SN74LVC2G17DSFR/SN74LVC2G17DSFR.kicad_sym")(options "")(descr ""))
 )

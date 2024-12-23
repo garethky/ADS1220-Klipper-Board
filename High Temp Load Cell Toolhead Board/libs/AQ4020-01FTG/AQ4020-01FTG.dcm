@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AQ4020-01FTG
+D ESD Suppressors / TVS Diodes 30A 2.5pF AEC-Q101
+K
+F https://componentsearchengine.com/Datasheets/2/AQ4020-01FTG.pdf
+$ENDCMP
+#
+#End Doc Library

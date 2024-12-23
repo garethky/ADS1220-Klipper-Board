@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model AQ4020-01FTG
+#/998979/1549109/2.50/2/3/TVS Diode (Uni-directional)
+DEF AQ4020-01FTG D 0 30 Y Y 1 F N
+F0 "D" 400 350 50 H V L BNN
+F1 "AQ4020-01FTG" 400 250 50 H V L BNN
+F2 "SOD2613X114N" 400 150 50 H I L BNN
+F3 "https://componentsearchengine.com/Datasheets/2/AQ4020-01FTG.pdf" 400 50 50 H I L BNN
+F4 "ESD Suppressors / TVS Diodes 30A 2.5pF AEC-Q101" 400 -50 50 H I L BNN "Description"
+F5 "1.14" 400 -150 50 H I L BNN "Height"
+F6 "LITTELFUSE" 400 -250 50 H I L BNN "Manufacturer_Name"
+F7 "AQ4020-01FTG" 400 -350 50 H I L BNN "Manufacturer_Part_Number"
+F8 "576-AQ4020-01FTG" 400 -450 50 H I L BNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Littelfuse/AQ4020-01FTG?qs=YCa%2FAAYMW015W3B84qpvIw%3D%3D" 400 -550 50 H I L BNN "Mouser Price/Stock"
+F10 "AQ4020-01FTG" 400 -650 50 H I L BNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/aq4020-01ftg/littelfuse?region=nac" 400 -750 50 H I L BNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 600 0 200 L 50 50 0 0 P
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+P 2 0 1 6 200 -80 240 -100 N
+P 2 0 1 6 200 -80 200 80 N
+P 2 0 1 6 160 100 200 80 N
+ENDDRAW
+ENDDEF
+#
+#End Library
