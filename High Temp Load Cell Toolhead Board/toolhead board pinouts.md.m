@@ -6,3 +6,12 @@ SPI2 - PB14,PB15,PB13
 ADC pins:
 PB0-PB1
 PA0-PA7
+
+
+
+
+https://www.ti.com/lit/ds/symlink/sn74ahc1g32-q1.pdf
+
+
+
+

@@ -10640,16 +10640,6 @@
 	)
 	(wire
 		(pts
-			(xy 510.54 207.01) (xy 510.54 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "841701aa-9260-46de-8456-8bbce4667b60")
-	)
-	(wire
-		(pts
 			(xy 334.645 52.705) (xy 363.855 52.705)
 		)
 		(stroke
@@ -11087,6 +11077,16 @@
 			(type default)
 		)
 		(uuid "a00cf054-77fc-48d4-92f5-e78ffe9ce530")
+	)
+	(wire
+		(pts
+			(xy 510.54 208.28) (xy 510.54 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a028776f-a441-4f02-bd08-e50eac6aca3e")
 	)
 	(wire
 		(pts
@@ -11657,6 +11657,16 @@
 			(type default)
 		)
 		(uuid "be1ba62c-860f-49d4-9076-daaa010b3b60")
+	)
+	(wire
+		(pts
+			(xy 510.54 231.14) (xy 510.54 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be2786cb-3368-434f-a6bd-8f91dfd725d5")
 	)
 	(wire
 		(pts
@@ -12737,16 +12747,6 @@
 			(type default)
 		)
 		(uuid "f3e9b4a6-f11a-4be7-ac3a-884e50dd8558")
-	)
-	(wire
-		(pts
-			(xy 510.54 231.14) (xy 510.54 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f451fd84-132a-4f75-8758-d65dea2d1159")
 	)
 	(wire
 		(pts
@@ -17363,6 +17363,72 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 510.54 231.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f1af0f3-7ec5-46bc-ae3c-2f485cb4e4bb")
+		(property "Reference" "#PWR041"
+			(at 510.54 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 510.54 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 510.54 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 510.54 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 510.54 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "941d4035-ae42-4efe-b91e-a23a50cf35e5")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -23542,6 +23608,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 510.54 208.28 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5833c9a3-2f16-4c6a-acc2-4b07087a04ef")
+		(property "Reference" "#PWR058"
+			(at 510.54 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 510.54 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 510.54 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 510.54 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 510.54 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2d31941-04c0-4aae-977a-b7c0d2718e2c")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L_Ferrite")
 		(at 323.85 136.525 270)
 		(unit 1)
@@ -25406,72 +25539,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 510.54 207.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63089edd-06f3-4096-af19-f586158f31ff")
-		(property "Reference" "#PWR041"
-			(at 510.54 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 510.54 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 510.54 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 510.54 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 510.54 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e963bc0-5666-4ca3-905d-8985435cf45a")
-		)
-		(instances
-			(project "High Temp Load Cell Toolhead Board"
-				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 427.99 118.11 0)
 		(unit 1)
@@ -25616,73 +25683,6 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 510.54 231.14 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "65ade68a-97a8-4b76-aac1-391a7e989fcd")
-		(property "Reference" "#PWR058"
-			(at 510.54 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 510.54 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 510.54 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 510.54 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 510.54 231.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac34c0db-ddf2-48dc-b5c3-bfb43b9cfbfc")
-		)
-		(instances
-			(project "High Temp Load Cell Toolhead Board"
-				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
-					(reference "#PWR058")
 					(unit 1)
 				)
 			)
