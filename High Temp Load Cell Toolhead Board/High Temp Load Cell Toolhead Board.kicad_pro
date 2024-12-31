@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.254,
-          "height": 0.46,
-          "width": 0.46
+          "drill": 0.0,
+          "height": 2.7,
+          "width": 2.7
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -180,6 +180,7 @@
       "track_widths": [
         0.0,
         0.127,
+        0.15,
         0.25,
         0.2667,
         0.3,
@@ -224,6 +225,10 @@
         },
         {
           "diameter": 0.4572,
+          "drill": 0.254
+        },
+        {
+          "diameter": 0.5,
           "drill": 0.254
         },
         {

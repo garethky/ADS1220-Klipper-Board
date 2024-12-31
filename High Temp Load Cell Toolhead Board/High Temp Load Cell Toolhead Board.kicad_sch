@@ -11260,16 +11260,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.075 246.38) (xy 114.3 246.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8f3c2e3-4659-4914-8681-62290e96d9bf")
-	)
-	(wire
-		(pts
 			(xy 109.22 92.71) (xy 109.22 97.79)
 		)
 		(stroke
@@ -12350,7 +12340,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.645 246.38) (xy 84.455 246.38)
+			(xy 80.645 246.38) (xy 114.3 246.38)
 		)
 		(stroke
 			(width 0)
@@ -14003,28 +13993,6 @@
 			)
 		)
 	)
-	(global_label "SPI_1_SCLK"
-		(shape input)
-		(at 525.78 222.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "33d15c2b-0645-4322-9eaf-8196707ece04")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 539.7718 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USB_PULL_UP"
 		(shape input)
 		(at 232.41 185.42 0)
@@ -14395,6 +14363,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ADXL345_CS"
+		(shape input)
+		(at 525.78 222.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "77772fc3-8247-4bf3-90bd-f3639bf00cde")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 540.437 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -25067,127 +25057,6 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "#PWR061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 88.265 246.38 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61536ada-ae0e-4c3a-bfa0-747c080319bc")
-		(property "Reference" "R3"
-			(at 88.265 238.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R47Ω"
-			(at 88.265 241.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 88.265 244.602 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.265 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "50mW / 1%"
-			(at 88.265 243.84 90)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Supplier" ""
-			(at 88.265 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier_Link" ""
-			(at 88.265 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier_Part_Number" ""
-			(at 88.265 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 88.265 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 88.265 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 88.265 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f6473690-6e1c-432e-872a-0a0610afa11a")
-		)
-		(pin "1"
-			(uuid "65574b8e-e404-4604-8ef5-38de166e7874")
-		)
-		(instances
-			(project "High Temp Load Cell Toolhead Board"
-				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
-					(reference "R3")
 					(unit 1)
 				)
 			)
