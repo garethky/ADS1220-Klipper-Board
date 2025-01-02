@@ -13888,6 +13888,17 @@
 		)
 		(uuid "a3204094-3596-44e0-9ef3-a850532398be")
 	)
+	(label "REFN0"
+		(at 504.19 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a492f04f-ba00-495f-b675-799f4b1cee2e")
+	)
 	(label "PT100+"
 		(at 205.74 344.17 0)
 		(fields_autoplaced yes)
@@ -14019,6 +14030,17 @@
 			(justify left bottom)
 		)
 		(uuid "eb579aba-0a15-484a-a81e-da85292ee505")
+	)
+	(label "REFP0"
+		(at 504.19 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eea267e7-8a1f-4474-bbb1-a2ec67806805")
 	)
 	(label "LOAD_CELL_REF-"
 		(at 119.38 330.2 0)
