@@ -24,8 +24,8 @@ Because of the chamber temperature the 2 main parts that are most susceptible to
 
 ## Squaks
 This section is a TODO list of issues and subjects not yet thought through:
+* Add registration holes to the stencil layer
 * Consider re-adding the fan LEDs - not convinced they will be useful.
-* Check for choking on the power planes
 * Carefully double check the pin assignments on the MCU for all pins. PWM, ADC, SPI etc.
 
 ## References
