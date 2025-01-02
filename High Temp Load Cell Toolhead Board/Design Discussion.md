@@ -24,9 +24,9 @@ Because of the chamber temperature the 2 main parts that are most susceptible to
 
 ## Squaks
 This section is a TODO list of issues and subjects not yet thought through:
-* Add registration holes to the stencil layer
-* Consider re-adding the fan LEDs - not convinced they will be useful.
-* Carefully double check the pin assignments on the MCU for all pins. PWM, ADC, SPI etc.
+* Double check the pin assignments on the MCU for all pins. PWM, ADC, SPI etc.
+* Double check the footprint of the Oscillator Module
+* Re-Run via stitching
 
 ## References
 You cant learn anything quickly without looking at the work of others. I specifically want to credit:

@@ -6302,24 +6302,24 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 20.32 10.16 0)
+			(property "Reference" "VR1"
+				(at 20.32 9.525 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
 			(property "Value" "TLVM23615RDNR"
-				(at 20.32 7.62 0)
+				(at 20.32 6.985 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
 			(property "Footprint" "SNAL_TLVM23615RDNR:CONV_TLVM23615RDNR"
-				(at 20.32 -20.066 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6329,7 +6329,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlvm23615.pdf?ts=1734735328754"
-				(at 5.842 -23.876 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6338,7 +6338,89 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Power Management Modules 3-V to 17-V input voltage, 3-A output, synchronous buck module with QFN package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Texas Instruments"
+				(at -56.388 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Supplier" "Mouser"
+				(at -23.114 10.668 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier_Link" "https://www.mouser.com/ProductDetail/Texas-Instruments/TLVM23615RDNR"
+				(at 24.892 18.034 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Supplier_Part_Number" "595-TLVM23615RDNR "
+				(at -53.848 9.398 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Texas Instruments "
+				(at 86.36 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "TPSM861252RDXR"
+				(at 86.106 7.366 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -6395,24 +6477,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6523,7 +6587,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "SW"
@@ -6534,6 +6598,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8013,7 +8095,7 @@
 		(uuid "7988386f-27ee-46dd-82d1-0c41175b053c")
 	)
 	(junction
-		(at 108.585 305.435)
+		(at 445.135 290.195)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d044e18-f50f-42e4-bca0-4a31fe0f5bb2")
@@ -8229,7 +8311,7 @@
 		(uuid "ce74cc44-c9c1-476c-9171-a7eaaf104b3e")
 	)
 	(junction
-		(at 108.585 319.405)
+		(at 445.135 304.165)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d34e9cfc-8bf9-4a48-936a-386fbfc31ddb")
@@ -8323,10 +8405,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fefe0711-2f1e-498b-8749-ee2cfb254d36")
-	)
-	(no_connect
-		(at 132.715 47.625)
-		(uuid "24a938c9-f5b9-4c4f-8ea5-2471b2d3e299")
 	)
 	(no_connect
 		(at 173.355 40.005)
@@ -8560,6 +8638,16 @@
 	)
 	(wire
 		(pts
+			(xy 385.445 321.945) (xy 405.765 321.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d509679-53e1-4c2f-a7b3-2c639de2a938")
+	)
+	(wire
+		(pts
 			(xy 427.99 165.1) (xy 427.99 170.18)
 		)
 		(stroke
@@ -8577,6 +8665,16 @@
 			(type default)
 		)
 		(uuid "0dcefbf1-bb0f-4198-95ff-2d9b80154c82")
+	)
+	(wire
+		(pts
+			(xy 413.385 321.945) (xy 417.195 321.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e4ab161-86b7-4322-9d7b-86f96299f959")
 	)
 	(wire
 		(pts
@@ -8630,7 +8728,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.265 291.465) (xy 108.585 291.465)
+			(xy 424.815 276.225) (xy 445.135 276.225)
 		)
 		(stroke
 			(width 0)
@@ -9040,7 +9138,7 @@
 	)
 	(wire
 		(pts
-			(xy 108.585 319.405) (xy 108.585 325.12)
+			(xy 445.135 304.165) (xy 445.135 309.88)
 		)
 		(stroke
 			(width 0)
@@ -9137,6 +9235,16 @@
 			(type default)
 		)
 		(uuid "327cacb2-5047-42e2-9149-30ad2158dbf4")
+	)
+	(wire
+		(pts
+			(xy 120.015 47.625) (xy 132.715 47.625)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3302c738-ff08-4178-ae24-57f1750b82c2")
 	)
 	(wire
 		(pts
@@ -9530,6 +9638,16 @@
 	)
 	(wire
 		(pts
+			(xy 447.675 321.945) (xy 424.815 321.945)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4880517d-7dc3-4d62-be49-b917baba2cc0")
+	)
+	(wire
+		(pts
 			(xy 500.38 345.44) (xy 505.46 345.44)
 		)
 		(stroke
@@ -9810,6 +9928,16 @@
 	)
 	(wire
 		(pts
+			(xy 413.385 337.185) (xy 417.195 337.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ea7b4b-49b2-4f23-b191-45645ac165e9")
+	)
+	(wire
+		(pts
 			(xy 233.68 219.71) (xy 233.68 228.6)
 		)
 		(stroke
@@ -9860,7 +9988,7 @@
 	)
 	(wire
 		(pts
-			(xy 108.585 291.465) (xy 108.585 305.435)
+			(xy 445.135 276.225) (xy 445.135 290.195)
 		)
 		(stroke
 			(width 0)
@@ -10130,7 +10258,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.645 291.465) (xy 76.835 291.465)
+			(xy 417.195 276.225) (xy 413.385 276.225)
 		)
 		(stroke
 			(width 0)
@@ -10750,7 +10878,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.215 305.435) (xy 64.135 305.435)
+			(xy 405.765 290.195) (xy 400.685 290.195)
 		)
 		(stroke
 			(width 0)
@@ -10800,7 +10928,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.835 305.435) (xy 80.645 305.435)
+			(xy 413.385 290.195) (xy 417.195 290.195)
 		)
 		(stroke
 			(width 0)
@@ -10930,7 +11058,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.215 291.465) (xy 64.135 291.465)
+			(xy 405.765 276.225) (xy 400.685 276.225)
 		)
 		(stroke
 			(width 0)
@@ -11450,6 +11578,16 @@
 	)
 	(wire
 		(pts
+			(xy 385.445 337.185) (xy 405.765 337.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b580501c-261f-4ecb-ae19-76f3f77f9aad")
+	)
+	(wire
+		(pts
 			(xy 398.78 68.58) (xy 408.94 68.58)
 		)
 		(stroke
@@ -11880,7 +12018,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.135 319.405) (xy 69.215 319.405)
+			(xy 400.685 304.165) (xy 405.765 304.165)
 		)
 		(stroke
 			(width 0)
@@ -11920,7 +12058,7 @@
 	)
 	(wire
 		(pts
-			(xy 108.585 305.435) (xy 108.585 319.405)
+			(xy 445.135 290.195) (xy 445.135 304.165)
 		)
 		(stroke
 			(width 0)
@@ -12130,6 +12268,16 @@
 	)
 	(wire
 		(pts
+			(xy 447.675 337.185) (xy 424.815 337.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2c7bb0c-5082-4b56-af9f-b2bbae22cc89")
+	)
+	(wire
+		(pts
 			(xy 439.42 78.74) (xy 454.66 78.74)
 		)
 		(stroke
@@ -12280,7 +12428,7 @@
 	)
 	(wire
 		(pts
-			(xy 108.585 319.405) (xy 88.265 319.405)
+			(xy 445.135 304.165) (xy 424.815 304.165)
 		)
 		(stroke
 			(width 0)
@@ -12600,7 +12748,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.265 305.435) (xy 108.585 305.435)
+			(xy 424.815 290.195) (xy 445.135 290.195)
 		)
 		(stroke
 			(width 0)
@@ -12840,7 +12988,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.835 319.405) (xy 80.645 319.405)
+			(xy 413.385 304.165) (xy 417.195 304.165)
 		)
 		(stroke
 			(width 0)
@@ -12975,8 +13123,8 @@
 		(uuid 7c3269f2-6a8d-4627-8136-80e4cd722282)
 	)
 	(rectangle
-		(start 44.45 274.32)
-		(end 113.03 332.74)
+		(start 381 259.08)
+		(end 449.58 342.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -13219,7 +13367,7 @@
 	)
 	(text "Indicator LEDs"
 		(exclude_from_sim no)
-		(at 78.74 276.987 0)
+		(at 415.29 261.747 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13509,6 +13657,28 @@
 		)
 		(uuid "47ce89c2-f382-4948-98b2-1559a05638c2")
 	)
+	(label "FAN1_MOSFET_GND"
+		(at 447.675 337.185 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "495af8d2-b176-4043-9a9d-5541d15f46de")
+	)
+	(label "INPUT_FANV+"
+		(at 385.445 337.185 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a2ae274-fc3f-4f31-b49d-655f4516131d")
+	)
 	(label "LOAD_CELL_REF+"
 		(at 397.51 123.19 0)
 		(fields_autoplaced yes)
@@ -13597,6 +13767,17 @@
 		)
 		(uuid "6d61dc36-2b79-4171-8549-95d69eb809bc")
 	)
+	(label "INPUT_FANV+"
+		(at 385.445 321.945 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77467780-a799-421d-958c-0f7d3d8d668d")
+	)
 	(label "LED_SDI"
 		(at 363.855 52.705 180)
 		(fields_autoplaced yes)
@@ -13640,6 +13821,17 @@
 			(justify left bottom)
 		)
 		(uuid "890976e7-b70d-4066-adec-0e026339e388")
+	)
+	(label "FAN0_MOSFET_GND"
+		(at 447.675 321.945 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8ec0f5fe-2099-4ede-baee-bc7cf2b93017")
 	)
 	(label "LED_POWER"
 		(at 162.56 287.02 0)
@@ -13750,6 +13942,17 @@
 			(justify left bottom)
 		)
 		(uuid "ca6dc991-b774-4773-b406-8b1bd27b92cb")
+	)
+	(label "SW_HEATSINK"
+		(at 120.015 47.625 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cbe116e1-f776-448f-9a45-750a70c56377")
 	)
 	(label "LOAD_CELL_REF-"
 		(at 397.51 165.1 0)
@@ -14083,7 +14286,7 @@
 	)
 	(global_label "USB_PULL_UP"
 		(shape input)
-		(at 64.135 319.405 180)
+		(at 400.685 304.165 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14093,7 +14296,7 @@
 		)
 		(uuid "47913dbb-12a9-4273-8844-411e7058ce12")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.1474 319.405 0)
+			(at 384.6974 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15095,7 +15298,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 84.455 319.405 180)
+		(at 421.005 304.165 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15104,7 +15307,7 @@
 		(fields_autoplaced yes)
 		(uuid "00251ce6-d733-4671-abc5-d2e940642276")
 		(property "Reference" "D6"
-			(at 86.0425 311.785 0)
+			(at 422.5925 296.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15112,7 +15315,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 86.0425 314.325 0)
+			(at 422.5925 299.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15120,7 +15323,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15129,7 +15332,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15138,7 +15341,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15147,7 +15350,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15156,7 +15359,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15165,7 +15368,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15174,7 +15377,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15183,7 +15386,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15192,7 +15395,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15201,7 +15404,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15210,7 +15413,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15219,7 +15422,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 84.455 319.405 0)
+			(at 421.005 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15244,7 +15447,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 73.025 305.435 270)
+		(at 409.575 290.195 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15254,7 +15457,7 @@
 		(fields_autoplaced yes)
 		(uuid "012db718-740b-4ee1-85a4-3671e01d7396")
 		(property "Reference" "R9"
-			(at 73.025 298.45 90)
+			(at 409.575 283.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15262,7 +15465,7 @@
 			)
 		)
 		(property "Value" "R2kΩ"
-			(at 73.025 300.99 90)
+			(at 409.575 285.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15270,7 +15473,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 73.025 307.213 90)
+			(at 409.575 291.973 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15279,7 +15482,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.025 305.435 0)
+			(at 409.575 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15288,7 +15491,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 73.025 302.26 90)
+			(at 409.575 287.02 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -15296,7 +15499,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 73.025 305.435 0)
+			(at 409.575 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15305,7 +15508,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 73.025 305.435 0)
+			(at 409.575 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15314,7 +15517,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 73.025 305.435 0)
+			(at 409.575 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15323,7 +15526,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 73.025 305.435 0)
+			(at 409.575 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15332,7 +15535,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 73.025 305.435 0)
+			(at 409.575 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15341,7 +15544,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 73.025 305.435 0)
+			(at 409.575 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17948,7 +18151,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 73.025 319.405 270)
+		(at 409.575 304.165 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17957,7 +18160,7 @@
 		(fields_autoplaced yes)
 		(uuid "16516bf5-64e0-49c2-b5d6-dc005effd8cd")
 		(property "Reference" "R10"
-			(at 73.025 312.42 90)
+			(at 409.575 297.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17965,7 +18168,7 @@
 			)
 		)
 		(property "Value" "R1kΩ"
-			(at 73.025 314.96 90)
+			(at 409.575 299.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17973,7 +18176,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 73.025 317.627 90)
+			(at 409.575 302.387 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17982,7 +18185,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.025 319.405 0)
+			(at 409.575 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17991,7 +18194,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 73.025 316.23 90)
+			(at 409.575 300.99 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -17999,7 +18202,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 73.025 319.405 0)
+			(at 409.575 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18008,7 +18211,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 73.025 319.405 0)
+			(at 409.575 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18017,7 +18220,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 73.025 319.405 0)
+			(at 409.575 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18026,7 +18229,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 73.025 319.405 0)
+			(at 409.575 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18035,7 +18238,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 73.025 319.405 0)
+			(at 409.575 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18044,7 +18247,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 73.025 319.405 0)
+			(at 409.575 304.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18401,7 +18604,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 84.455 305.435 0)
+		(at 421.005 290.195 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18411,7 +18614,7 @@
 		(fields_autoplaced yes)
 		(uuid "2136128d-af84-4882-9046-ed61ddb07215")
 		(property "Reference" "D5"
-			(at 86.0425 299.085 0)
+			(at 422.5925 283.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18419,7 +18622,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 86.0425 301.625 0)
+			(at 422.5925 286.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18427,7 +18630,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18436,7 +18639,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18445,7 +18648,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18454,7 +18657,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18463,7 +18666,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18472,7 +18675,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18481,7 +18684,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18490,7 +18693,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18499,7 +18702,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18508,7 +18711,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18517,7 +18720,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18526,7 +18729,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 84.455 305.435 0)
+			(at 421.005 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18849,7 +19052,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 73.025 291.465 90)
+		(at 409.575 276.225 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18859,7 +19062,7 @@
 		(fields_autoplaced yes)
 		(uuid "259bb6ab-6fc0-423e-adf4-b026a7ae2856")
 		(property "Reference" "R15"
-			(at 73.025 284.48 90)
+			(at 409.575 269.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18867,7 +19070,7 @@
 			)
 		)
 		(property "Value" "R1kΩ"
-			(at 73.025 287.02 90)
+			(at 409.575 271.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18875,7 +19078,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 73.025 289.687 90)
+			(at 409.575 274.447 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18884,7 +19087,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.025 291.465 0)
+			(at 409.575 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18893,7 +19096,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 73.025 288.29 90)
+			(at 409.575 273.05 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -18901,7 +19104,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 73.025 291.465 0)
+			(at 409.575 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18910,7 +19113,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 73.025 291.465 0)
+			(at 409.575 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18919,7 +19122,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 73.025 291.465 0)
+			(at 409.575 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18928,7 +19131,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 73.025 291.465 0)
+			(at 409.575 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18937,7 +19140,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 73.025 291.465 0)
+			(at 409.575 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18946,7 +19149,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 73.025 291.465 0)
+			(at 409.575 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19816,7 +20019,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 64.135 291.465 90)
+		(at 400.685 276.225 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19825,7 +20028,7 @@
 		(fields_autoplaced yes)
 		(uuid "30f3a6ae-1d17-4811-b92e-b0101a57bb43")
 		(property "Reference" "#PWR054"
-			(at 67.945 291.465 0)
+			(at 404.495 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19834,7 +20037,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 60.96 291.4649 90)
+			(at 397.51 276.2249 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19843,7 +20046,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.135 291.465 0)
+			(at 400.685 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19852,7 +20055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.135 291.465 0)
+			(at 400.685 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19861,7 +20064,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 64.135 291.465 0)
+			(at 400.685 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19870,7 +20073,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 64.135 291.465 0)
+			(at 400.685 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22669,7 +22872,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 64.135 305.435 90)
+		(at 400.685 290.195 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22678,7 +22881,7 @@
 		(fields_autoplaced yes)
 		(uuid "4da60a19-6aef-43e9-b7b8-2dbc89104cb9")
 		(property "Reference" "#PWR087"
-			(at 67.945 305.435 0)
+			(at 404.495 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22687,7 +22890,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 60.96 305.4349 90)
+			(at 397.51 290.1949 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22696,7 +22899,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.135 305.435 0)
+			(at 400.685 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22705,7 +22908,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.135 305.435 0)
+			(at 400.685 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22714,7 +22917,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 64.135 305.435 0)
+			(at 400.685 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22723,7 +22926,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 64.135 305.435 0)
+			(at 400.685 290.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26080,6 +26283,128 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 409.575 337.185 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6772c5f1-265b-4e5f-b3be-75c363787f6a")
+		(property "Reference" "R5"
+			(at 409.575 330.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R2kΩ"
+			(at 409.575 332.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 409.575 338.963 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 409.575 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50mW / 1%"
+			(at 409.575 334.01 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 409.575 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Link" ""
+			(at 409.575 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Part_Number" ""
+			(at 409.575 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 409.575 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 409.575 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 409.575 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dea1a039-80ba-4214-96b6-af10c3297054")
+		)
+		(pin "1"
+			(uuid "011e1425-98ae-4171-9f40-7b0f81ba37fc")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 53.34 173.99 0)
 		(unit 1)
@@ -26931,6 +27256,156 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 421.005 321.945 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7266c4c5-5976-4bb8-8ef9-0b251e4a32e7")
+		(property "Reference" "D13"
+			(at 422.5925 315.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RED LED"
+			(at 422.5925 318.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digikey"
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Lite-On Inc."
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "LTST-C193KRKT-5A"
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Part_Number" "160-1830-1-ND"
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 421.005 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f23558a3-844c-4203-974f-94bb30ae222c")
+		)
+		(pin "2"
+			(uuid "3680ae61-5603-4fdd-bdbe-d96545dc170e")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -28962,7 +29437,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 84.455 291.465 0)
+		(at 421.005 276.225 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28972,7 +29447,7 @@
 		(fields_autoplaced yes)
 		(uuid "93292aee-1ea6-4575-a47e-95dade922b04")
 		(property "Reference" "D2"
-			(at 86.0425 285.115 0)
+			(at 422.5925 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28980,7 +29455,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 86.0425 287.655 0)
+			(at 422.5925 272.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28988,7 +29463,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28997,7 +29472,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29006,7 +29481,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29015,7 +29490,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29024,7 +29499,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29033,7 +29508,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29042,7 +29517,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29051,7 +29526,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29060,7 +29535,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29069,7 +29544,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29078,7 +29553,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29087,7 +29562,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 84.455 291.465 0)
+			(at 421.005 276.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29492,6 +29967,156 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 421.005 337.185 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9673352f-b736-483b-a1a9-6c173269364a")
+		(property "Reference" "D14"
+			(at 422.5925 330.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RED LED"
+			(at 422.5925 333.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digikey"
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Lite-On Inc."
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "LTST-C193KRKT-5A"
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Part_Number" "160-1830-1-ND"
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 421.005 337.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba16616a-c29f-46e7-9142-1af1c11ad0ff")
+		)
+		(pin "2"
+			(uuid "a6664406-a4a8-499c-a38d-cbd4c9cded62")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 161.925 173.99 0)
 		(unit 1)
@@ -29823,6 +30448,128 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 409.575 321.945 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ac41151-b1ee-4fc1-b960-740e957b2aac")
+		(property "Reference" "R3"
+			(at 409.575 314.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R2kΩ"
+			(at 409.575 317.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 409.575 323.723 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 409.575 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "50mW / 1%"
+			(at 409.575 318.77 90)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 409.575 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Link" ""
+			(at 409.575 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Part_Number" ""
+			(at 409.575 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 409.575 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 409.575 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 409.575 321.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8cf82acf-ac80-433f-8682-7d6b8c47d235")
+		)
+		(pin "1"
+			(uuid "d6166060-c461-4a8c-96dc-1ea83aed3834")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -35387,7 +36134,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 108.585 325.12 0)
+		(at 445.135 309.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -35396,7 +36143,7 @@
 		(fields_autoplaced yes)
 		(uuid "f322ddb2-6634-473d-ac8f-4f0ef99d4b80")
 		(property "Reference" "#PWR039"
-			(at 108.585 331.47 0)
+			(at 445.135 316.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35405,7 +36152,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 108.585 330.2 0)
+			(at 445.135 314.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35413,7 +36160,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 108.585 325.12 0)
+			(at 445.135 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35422,7 +36169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 108.585 325.12 0)
+			(at 445.135 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35431,7 +36178,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 108.585 325.12 0)
+			(at 445.135 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
