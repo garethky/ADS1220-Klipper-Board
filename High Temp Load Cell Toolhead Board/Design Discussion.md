@@ -25,7 +25,7 @@ Because of the chamber temperature the 2 main parts that are most susceptible to
 ## Squaks
 This section is a TODO list of issues and subjects not yet thought through:
 * Double check the pin assignments on the MCU for all pins. PWM, ADC, SPI etc.
-* Double check the footprint of the Oscillator Module
+* Double check what unused pins on all components should be tied to: NC or GND
 * Re-Run via stitching
 
 ## References
