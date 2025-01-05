@@ -16837,6 +16837,29 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 477.52 219.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28c3f8db-0779-42c1-9889-2655cbb51755")
+		(property "Netclass" "Digital Signal"
+			(at 478.2185 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 440.055 56.515 0)
 		(fields_autoplaced yes)
 		(effects

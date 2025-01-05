@@ -593,6 +593,7 @@
       "LED_MCU_SDO": "Digital Signal",
       "LED_SDO": "Digital Signal",
       "MAX31865_CS": "Digital Signal",
+      "Net-(AC1-SDA{slash}SDI{slash}SDIO)": "Digital Signal",
       "Net-(L4-Pad2)": "ADC Signal",
       "Net-(L5-Pad1)": "ADC Signal",
       "Net-(U1-BIAS)": "ADC Signal",
