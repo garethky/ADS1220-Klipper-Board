@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.5,
-          "width": 0.5
+          "height": 1.0,
+          "width": 0.9
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -500,7 +500,58 @@
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 6
+        "wire_width": 10
+      },
+      {
+        "bus_width": 10,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "ADC Signal",
+        "pcb_color": "rgb(194, 0, 194)",
+        "schematic_color": "rgb(194, 0, 194)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 10
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Digital Pair",
+        "pcb_color": "rgb(194, 194, 0)",
+        "schematic_color": "rgb(194, 194, 0)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 10
+      },
+      {
+        "bus_width": 10,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Digital Signal",
+        "pcb_color": "rgb(0, 194, 194)",
+        "schematic_color": "rgb(0, 194, 194)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 10
       }
     ],
     "meta": {
@@ -508,17 +559,90 @@
     },
     "net_colors": {
       "+12V": "rgb(255, 153, 0)",
+      "+24V": "rgb(204, 102, 0)",
       "+3V3": "rgb(0, 0, 255)",
-      "+5V": "rgb(255, 0, 255)",
-      "+5V5": "rgb(194, 0, 0)",
+      "+5V": "rgb(194, 0, 0)",
+      "+5V5": "rgb(72, 0, 0)",
       "+5V75": "rgb(72, 0, 72)",
       "/+12V Dirty": "rgb(128, 77, 0)",
+      "/+24V_INPUT": "rgb(128, 77, 0)",
+      "/+FANV_INPUT": "rgb(204, 102, 0)",
       "/INPUT_FANV+": "rgb(221, 133, 0)",
       "Earth_Protective": "rgb(72, 72, 0)",
       "GND": "rgb(0, 132, 0)"
     },
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "/HEATBREAK_TH_GND": "ADC Signal",
+      "/HEATBREAK_TH_VREF": "ADC Signal",
+      "/LED_CLK": "Digital Signal",
+      "/LED_SDI": "Digital Signal",
+      "/PT100+": "ADC Signal",
+      "/PT100-": "ADC Signal",
+      "ADS1220_CS": "Digital Signal",
+      "ADS1220_DRDY": "Digital Signal",
+      "ADXL345_CS": "Digital Signal",
+      "AMBIENT_THERMISTOR": "ADC Signal",
+      "FAN0_PWM": "Digital Signal",
+      "FAN0_TACH": "ADC Signal",
+      "FAN1_PWM": "Digital Signal",
+      "FAN1_TACH": "ADC Signal",
+      "FILAMENT_SW": "ADC Signal",
+      "HEATBREAK_THERMISTOR": "ADC Signal",
+      "LED_CLK": "Digital Signal",
+      "LED_MCU_CLK": "Digital Signal",
+      "LED_MCU_SDO": "Digital Signal",
+      "LED_SDO": "Digital Signal",
+      "MAX31865_CS": "Digital Signal",
+      "Net-(L4-Pad2)": "ADC Signal",
+      "Net-(L5-Pad1)": "ADC Signal",
+      "Net-(U1-BIAS)": "ADC Signal",
+      "Net-(U1-FORCE+)": "ADC Signal",
+      "Net-(U1-FORCE-)": "ADC Signal",
+      "Net-(U1-ISENSOR)": "ADC Signal",
+      "Net-(U5-AIN0{slash}REFP1)": "ADC Signal",
+      "Net-(U5-AIN1)": "ADC Signal",
+      "SPI_1_SCLK": "Digital Signal",
+      "SPI_1_SDI": "Digital Signal",
+      "SPI_1_SDO": "Digital Signal",
+      "SWD_IO": "Digital Signal",
+      "SW_CLK": "Digital Signal",
+      "USB_D+": "Digital Pair",
+      "USB_D-": "Digital Pair"
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "ADC Signal",
+        "pattern": "/LOAD_CELL_IN+"
+      },
+      {
+        "netclass": "ADC Signal",
+        "pattern": "/LOAD_CELL_IN-"
+      },
+      {
+        "netclass": "ADC Signal",
+        "pattern": "/AINP"
+      },
+      {
+        "netclass": "ADC Signal",
+        "pattern": "/AINN"
+      },
+      {
+        "netclass": "ADC Signal",
+        "pattern": "/AIN1"
+      },
+      {
+        "netclass": "ADC Signal",
+        "pattern": "/AIN0"
+      },
+      {
+        "netclass": "ADC Signal",
+        "pattern": "/AIN1-R"
+      },
+      {
+        "netclass": "ADC Signal",
+        "pattern": "/AIN0-R"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
