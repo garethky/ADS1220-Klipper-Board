@@ -15534,28 +15534,6 @@
 		)
 		(uuid "fb8debf4-dbf7-4f1e-b641-dcc7b27eab12")
 	)
-	(global_label "LED_MCU_CLK"
-		(shape input)
-		(at 105.41 246.38 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "077f5e1c-625d-4606-9e12-3c435c5b823b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.4225 246.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ADS1220_DRDY"
 		(shape input)
 		(at 562.61 149.86 0)
@@ -15574,28 +15552,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED_MCU_SDO"
-		(shape input)
-		(at 105.41 251.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1bcd94c6-5cd0-4f8b-aa24-acd84d17fc71")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.1806 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -16128,6 +16084,28 @@
 			)
 		)
 	)
+	(global_label "LED_MCU_SDO"
+		(shape input)
+		(at 105.41 246.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9acd860f-9787-47a5-aa02-8896a8f574c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.1806 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI_1_SCLK"
 		(shape input)
 		(at 68.58 220.98 180)
@@ -16476,6 +16454,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_MCU_CLK"
+		(shape input)
+		(at 105.41 251.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ca96cd45-1d2e-4ead-9aba-752f4d23cbb4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 89.4225 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)

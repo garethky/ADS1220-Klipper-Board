@@ -56,6 +56,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.1524,
+          "via_gap": 0.1524,
+          "width": 0.2286
         }
       ],
       "drc_exclusions": [],
@@ -180,12 +185,9 @@
       "track_widths": [
         0.0,
         0.127,
-        0.15,
-        0.25,
-        0.2667,
         0.3,
         0.35,
-        0.3556,
+        0.381,
         0.4,
         0.5,
         0.75,
@@ -497,7 +499,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.381,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 10
@@ -512,9 +514,9 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "ADC Signal",
-        "pcb_color": "rgb(194, 0, 194)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(194, 0, 194)",
-        "track_width": 0.2,
+        "track_width": 0.381,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 10
@@ -522,16 +524,16 @@
       {
         "bus_width": 12,
         "clearance": 0.127,
-        "diff_pair_gap": 0.25,
+        "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.2286,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Digital Pair",
-        "pcb_color": "rgb(194, 194, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(194, 194, 0)",
-        "track_width": 0.2,
+        "track_width": 0.2286,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 10
@@ -546,9 +548,9 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Digital Signal",
-        "pcb_color": "rgb(0, 194, 194)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 194, 194)",
-        "track_width": 0.2,
+        "track_width": 0.381,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 10
@@ -613,35 +615,23 @@
     "netclass_patterns": [
       {
         "netclass": "ADC Signal",
-        "pattern": "/LOAD_CELL_IN+"
+        "pattern": "/LOAD_CELL_*"
       },
       {
         "netclass": "ADC Signal",
-        "pattern": "/LOAD_CELL_IN-"
+        "pattern": "/AIN*"
       },
       {
-        "netclass": "ADC Signal",
-        "pattern": "/AINP"
+        "netclass": "Digital Pair",
+        "pattern": "USB_D*"
       },
       {
-        "netclass": "ADC Signal",
-        "pattern": "/AINN"
+        "netclass": "Digital Signal",
+        "pattern": "SPI*"
       },
       {
-        "netclass": "ADC Signal",
-        "pattern": "/AIN1"
-      },
-      {
-        "netclass": "ADC Signal",
-        "pattern": "/AIN0"
-      },
-      {
-        "netclass": "ADC Signal",
-        "pattern": "/AIN1-R"
-      },
-      {
-        "netclass": "ADC Signal",
-        "pattern": "/AIN0-R"
+        "netclass": "Default",
+        "pattern": ""
       }
     ]
   },
