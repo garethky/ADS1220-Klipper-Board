@@ -174,9 +174,9 @@
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 5,
           "td_height_ratio": 1.0,
-          "td_length_ratio": 0.5,
+          "td_length_ratio": 0.8,
           "td_maxheight": 2.0,
-          "td_maxlen": 1.0,
+          "td_maxlen": 5.0,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_track_end",
           "td_width_to_size_filter_ratio": 0.9
@@ -185,6 +185,7 @@
       "track_widths": [
         0.0,
         0.127,
+        0.25,
         0.3,
         0.35,
         0.381,
@@ -226,28 +227,16 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.4572,
-          "drill": 0.254
+          "diameter": 0.4064,
+          "drill": 0.2032
         },
         {
-          "diameter": 0.5,
+          "diameter": 0.4572,
           "drill": 0.254
         },
         {
           "diameter": 0.6,
           "drill": 0.3
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.5
-        },
-        {
-          "diameter": 1.0,
-          "drill": 0.5
-        },
-        {
-          "diameter": 5.6,
-          "drill": 3.4
         }
       ],
       "zones_allow_external_fillets": false
@@ -580,6 +569,7 @@
       "/LED_SDI": "Digital Signal",
       "/PT100+": "ADC Signal",
       "/PT100-": "ADC Signal",
+      "/SPI_1_SDO_OR_CS": "Digital Signal",
       "ADS1220_CS": "Digital Signal",
       "ADS1220_DRDY": "Digital Signal",
       "ADXL345_CS": "Digital Signal",
@@ -821,7 +811,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "${DNP}"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {

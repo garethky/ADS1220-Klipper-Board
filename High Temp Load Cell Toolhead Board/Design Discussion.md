@@ -39,8 +39,14 @@ You cant learn anything quickly without looking at the work of others. I specifi
 ## Detailed Design Topics
 Everything, in no particular order...
 
-### No USB Port
-USB is used as the communications protocol. A USB port was not used because it consumed valuable board space. Also, USB-C ports feature some very small pads that I didnt want to hand assemble. The USB D+ and D- wire pair must be twisted together to provide a good connection. A shielded twisted pair cable could also be used for these wires.
+### Optional USB Port
+USB is used as the communications protocol. The USB D+ and D- wire pair must be twisted together to provide a good connection. A shielded twisted pair cable could also be used for these wires, so long as it can meet the requirements for continuous flexing and chamber temperatures.
+
+I didnt see a comprelling reason to opt for CAN bus. It requires extra hardware on the host. The cable requirements for CAN are similar to USB. (remember we aret doing the super high speed version of USB)
+
+A USBC port is included on the back side of the part and not intended to be used during normal opperation. It is included for bench running the part and performing firmware updates before it is installed into a printer. Inital flashing can be accomplished via the debug port, so this hardware isnt required. USB cabes are not rated for continous flexing conditions and high temperatures in a 3D printer. We usually build custom cables out of PTFE coated wire that can flex, resist abrasion and withstand the high temps.
+
+The power supplied by the USB cable runs the MCU. A protection diode is incuded to stop power flowing back over the USB cable if the main power supply and the USB supple are connected at the same time. Due to voltage drop at the protection diode the 5V LDO wont see more like 4.5V and will either run in dropout mode or fail to start. If the 5V section of the board doesnt work under USB power this is OK as its just a debugging connector. If opperation is required for some test, just plug in the 24V/12V supply.
 
 ### Power
 
@@ -49,7 +55,7 @@ General Power Architecture:
 12V / 24V --> Buck Converter --> 5.75V |--> Precision LDO --> 5V
                                        |--> Precision LDO --> 3.3V
 
-To get the most out of the ADS1220 ADC a very low noise 5V reference is required. Typical LDOs are good for this but there is a more specialized class of LDO for measurment applications like this 24bit ADC. Thats what I am using here. These LDOs are voltage spcific so no external tuning resistors are required. They also have built-in reverse voltage protection so the debug port can power the board without the need for extra parts.
+To get the most out of the ADS1220 ADC a very low noise 5V reference is required. Typical LDOs are good for this but there is a more specialized class of LDO for measurment applications like this 24bit ADC. Thats what I am using here. These LDOs are voltage spcific so no external tuning resistors are required. They also have built-in reverse voltage protection so the debug port can power the board without the need for extra protection diodes.
 
 #### LDO Selection
 
@@ -137,12 +143,12 @@ VOUT = 5.53V
 This is prefectly acceptable.
 
 ### Stackup & Ground Planes
-The PCB stackup is: Ground, Signal/Ground, Power/Signal, Ground.
+The PCB stackup is: Ground, Signal/Ground, Power/Signal/Ground, Ground
 
 Layer 1 - Components and Ground. Wherever practical, traces on this layer drop into a via and remain as short as possible.
-Layer 2 - Primary signal routing plane. Any long traces that would have cut thr power plane are routed on this layer.  Some care is taken to route traces under ground on the layer above but this wasnt practical everywhere.
-Layer 3 - Power plane + secondary signal layer. 3.3v, 5V and 12V power is poured in large planes on this layer. The board components are organized such that 5V and 12V parts are grouped on different edges of the board so the power planes dont need to overlap. Singals routed on this layer need extra care not to cut or choke the power zones.
-Layer 4 - Ground plane for layer 3
+Layer 2 - Primary signal routing plane. Some care is taken to route traces under ground on the layer above but this wasnt practical everywhere.
+Layer 3 - Power rails + secondary signal layer. 3.3v, 5V and 12V power is routed via wide traces on this layer. The board components are organized such that 5V and 12V parts are grouped on different edges of the board so the power rails dont need to cross. Singals routed on this layer need extra care not to block the power rails.
+Layer 4 - Ground plane for layer 3. Some components are on this layer, similar to layer 1. The bypass capacitors for the MCU and the optional USB port.
 
 The LDO's and Buck Converter get their best thermal performance when the board has as much copper in it as possible. Basically its a large heat spreader. Since the plan is already to pour ground everywhere this fits perfectly with what the VRMs want.
 
@@ -150,11 +156,13 @@ The LDO's and Buck Converter get their best thermal performance when the board h
 The bord is circled by a guard ring that is 2mm wide, placed on every layer of the board and stitched together with vias. The copper is exposed to allow it to be condutive. The mounting holes and mounting points on the external connectors are all tied into the guard ring.
 
 A spot for a TVS diode to bridge the guard ring to the ground plane is provided but at the time of design its not clear if this is the right thing to do. Other options exist:
-* GND and he guard ring can be connected with a large resistor.
+* GND and the guard ring can be connected with a large resistor.
 * The guard ring can be left floating to pass ESD spikes around the board and back into the printers frame via the mounting holes.
 * The load cell can be grounded to the guard ring by attacing a ring terminal to a ground wire and fixing it to the adjacent mounting point.
 * The guard ring can be connected back to chassis ground via a dedicated wire back to the electronics bay. Again this can be done with ring terminals.
 * ESD transmissable plastic could be used to create a cover for the board that would then be electrically connected to the guard ring.
+
+The aim of the prototype is to test these options out in a real printer to see what performs best.
 
 #### Via Stitching
 Ground planes on layers 1, 2 and 4 and the Guard Ring have via stitching applied.
@@ -184,36 +192,38 @@ Sensitive components are guarded with Ferrite beads (120R@100Mhz/3A) to filter h
 * LED power lines
 
 ### Trace Widths
-The board isnt "Controlled Impedance" but im using the trace widths from the data table from the board house: [OSH Park 4 Layer Impedance Table](https://docs.oshpark.com/resources/four-layer-impedence-table.png)
+The board isnt "Controlled Impedance" but I'm using the trace widths from the data table from the board house: [OSH Park 4 Layer impedance table](https://docs.oshpark.com/resources/four-layer-impedence-table.png). They dont spcify the settings for a differential pair in an internal layer. The 4 layer board has a large core so the 2 adjacet layers are asymetric. I used [this calculator](https://www.allaboutcircuits.com/tools/asymmetric-stripline-impedance-calculator/) and found that, for internal layers, there is basically no difference in impedance by trace width in this stackup.
 
 | Track Width  | Usecase |
 |--------------|---------|
-| 9mil         | 90 Ohm Impedance lines for USB interface |
-| 15mil        | 50 Ohm Impedance lines for SPI, ADC & PWM lines |
-| 0.3mm, 0.4mm | Pin width of most of the ICs. Used for power decoupling capacitor links  |
+| 9mil, 5 mil spacing         | 90 Ohm Impedance lines for USB interface |
+| 15 mil        | 50 Ohm Impedance lines for SPI, ADC & PWM lines |
+| 0.2mm / 0.3mm / 0.35mm | Pin width of most of the ICs
+| 0.4mm / 0.5mm | Wider traces used for power decoupling capacitor links |
+
+If thinner traces are desierable, expecially around the MCU, then a 6 layer process is probably required. The [6 Layer impedance table](https://docs.oshpark.com/resources/six-layer-impedence-table.png) indicates a single ended trace in layer 2 is just 4.2 mil, vs 15 mil in the 4 layer board. Drill sizes on the 6 layer process also go down by 2 mil which would help with fanout.
+
+(Also note how much more info is provided for the 6 layer stackup! I take that to mean 2 and 4 layer processes are "not for serious projects". Serious starts at 6 layers.)
 
 ### Via Sizing
-The default via size of 0.3mm / 0.6mm have an ampacity of over 2A. Thats good for basically everything on the board.
-
-On the USB lines a minimum sized via will impact the rise/fall times less.
+The default KiCad via size of 0.3mm / 0.6mm have an ampacity of over 2A. Thats good for basically everything on the board. The board house cant go much smaller than this anyway.
 
 ### Capacitor Sizes
 Capacitors de-rate at the target 80C chamber temperatures. Larger capacitors de-rate less than smaller ones. I'm also hand assembling the board and decided the smallest component I want to place manually is a 0603. This chart is used to select capacitor sizing:
-
 
 | Range C | SMD Size | Type   | Voltage | Range |
 |---------|----------|--------|---------|-------|
 | 1pf - 10nf | 0603 | Ceramic C0G | 25V | 10% |
 | 10nf - 0.1uf | 0603 | Ceramic X7R | 25V | 10% |
 | 0.1uf - 2.2uF | 0805 | Ceramic X7R | 25V | 10% |
-| 2.2uF - 22uF | 1206 | Ceramic X7R | 25V | 10% |
+| 2.2uF - 22uF | 1206 | Ceramic X7R | 70V | 10% |
 
 Nothing in the design requires an electrolytic capacitor.
 
 ## Power
 
 ## LEDs
-Leds are driven by 24V, 5V and 3.3V power. Resistors are selected to limit the LED's driven current to about than 2ma. 3.3V output pins on the MCU supply a maximum of ~2.0mA current.
+Leds are driven by 24V, 5V and 3.3V power. Resistors are selected to limit the LED's driven current to about than 2ma. 3.3V output pins on the MCU supply a maximum of 25mA of current.
 
 LIST-C193KRKT-5A - LiteOn
 Forward Voltage: 2.0V
@@ -227,14 +237,16 @@ Forward Current: 1.5mA
 
 Resistors should be able to handle 1/2 watt of power or better. Usually this requires 0805 size resistors.
 
+Some tuning of this might be required in the prototype based on brightness.
+
 ### Fan Voltage
-An inout pin allows you to pick the supply voltage for the fans. I dont have to generate 12V on board to run them.
+An dedicated input pin allows you to pick the supply voltage for the fans. I dont have to generate 12V on board to run them.
 
 #### Fan RPM Monitoring
 My personal view is that hot end cooling fans are safety critical systems that should be monitored. If the fan fails the printer should shut down the heater. So the fans on this board feature an RPM monitoring pin. There are plenty of fans in the supply chain that have this feature.
 
 #### Fan PWM Output
-4 Wire fans in this size do exist but they are very rare. If you use a 4 wire fan, you dont need to put MOSFETs on the board to drive the fans. This effectivly means you can get the MOSFET into the place where its more likely to get cooled. But the lack of fans means this is very unlikely to happen, so I left this out. If i had my way I would require 4 wire fans and omit the MOSFETs.
+4 Wire fans in this size do exist but they are very rare. If you use a 4 wire fan, you dont need to put MOSFETs on the board to drive the fans. This effectivly means you can get the MOSFET into the place where its more likely to get cooled. But the lack of fans means this is very unlikely to happen, so I left this out. If I had my way I would require 4 wire fans and omit the MOSFETs.
 
 #### Tach Line Resistor
 Fans report their RPM or Tachometer as a square wave. An ADC reference voltage is supplied in to the fan's tachometer input. The fan then pulls this line low to create a square wave. This means the tach line voltage supply connects to ground inside the fan. Both [Noctua](https://noctua.at/pub/media/wysiwyg/Noctua_PWM_specifications_white_paper.pdf) and [Sunon](https://www.sunon.com/PROSEARCH_FILES/(D04115420G-01)-1.pdf) require limiting the current flowing through the tach line to not more thean 5mA. This is important to do as, when the RPM is 0, the line may be pulled low continouously causing a large current flow through the fan which may cause it to overheat. All the other designs I have seen omit this resistor.
@@ -260,6 +272,21 @@ I increased the gate resistor value from 100 Ohms to 1K Ohms. Some designs omit 
 
 I'd like to have some math to work out the how fast the gate needs to switch and calulate an optimal value. Klipper's default switching time is 10ms in software PWM mode. This is 100Hz, a very slow switching speed. It is possible that higher switching speed might work for some fans when using hardware PWM.
 
-### Crystal
+### MCU Crystal
+I wanted to use a crystal oscillator module for this project to save on space and complexity. But I found this to be impossible with the current katapult/klipper codebase:
 
-I opted to use an Oscillator module instead of a crystal + capcitors. The module combines a crystal with the correct capacitors and a compact footprint. Capacitor tuning is something that requires more sensitive equipment than I haveto validate the frequency produced by the circuit. Similar to my approach to power, I wanted to avoid anything that introduced complexity and a point of failure.
+#### OSC_OUT Pin
+This is the pin that would normally complete the crystal oscillator circuit. When using an oscillator module its less than clear what must be done from the documentation. But as best as I understand:
+* [AN1709](https://www.st.com/resource/en/application_note/an1709-emc-design-guide-for-stm8-stm32-and-legacy-mcus-stmicroelectronics.pdf) has an explicit diagram with the pin tied to ground when using an external clock source.
+* [AN5286](https://www.st.com/resource/en/application_note/an2586-getting-started-with-stm32f10xxx-hardware-development-stmicroelectronics.pdf) has a similar diagram (Figure 6) that shows the OSC_OUT pin unconnected with a "Hi-Z" note. Hi-Z mean high impedance. There is a "BYPASS" / `HSEBYP` mode that needs to be configured in software that disconnectes the OSC_OUTPUT from the clock source. I assume this is how you enter the "Hi-Z" mode.
+* I'm pretty sure [this code](https://github.com/Arksine/katapult/blob/25a23cd420d7f0f7b677f1511b5739385fca72d9/lib/stm32f1/system_stm32f1xx.c#L173C12-L173C18) in katapult turns off that bypass mode. This isn't user configurable, so the bypass mode is never available, meaning only crystals should be used.
+
+Its not clear if using the module in non-bypass mode will work correctly if the pin is grounded or floating, since the bypass mode is not engaged.
+
+
+### Unused Pins
+What is the correct thing to do with unused pins?
+
+STM have an app note [AN4899](https://www.st.com/content/ccc/resource/technical/document/application_note/group0/13/c0/f6/6c/29/3b/47/b3/DM00315319/files/DM00315319.pdf/jcr:content/translations/en.DM00315319.pdf) that advises connecting all unused pins to GND: "If the application is sensitive to ESD, prefer a connection to ground".
+
+Most of the other chips have somethign similar in the documentation.

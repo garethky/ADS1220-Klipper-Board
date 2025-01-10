@@ -3,7 +3,6 @@
   (lib (name "ADXL345")(type "KiCad")(uri "${KIPRJMOD}/libs/ADXL345/ADXL345.pretty")(options "")(descr ""))
   (lib (name "Molex CLIK-Mate")(type "KiCad")(uri "${KIPRJMOD}/libs/Molex CLIK-Mate/Molex CLIK-Mate.pretty")(options "")(descr ""))
   (lib (name "AQ4020-01FTG")(type "KiCad")(uri "${KIPRJMOD}/libs/AQ4020-01FTG")(options "")(descr ""))
-  (lib (name "ULTRA_TLVM23615RDNR")(type "KiCad")(uri "${KIPRJMOD}/libs/ULTRA_TLVM23615RDNR/footprints.pretty")(options "")(descr "")(disabled))
-  (lib (name "SN74LVC2G17DSFR")(type "KiCad")(uri "${KIPRJMOD}/libs/SN74LVC2G17DSFR/footprints.pretty")(options "")(descr ""))
   (lib (name "SNAL_TLVM23615RDNR")(type "KiCad")(uri "${KIPRJMOD}/libs/SNAP_TLVM23615RDNR")(options "")(descr ""))
+  (lib (name "ECS-.327-6-34QCS-TR")(type "KiCad")(uri "${KIPRJMOD}/libs/ECS-.327-6-34QCS-TR")(options "")(descr ""))
 )
