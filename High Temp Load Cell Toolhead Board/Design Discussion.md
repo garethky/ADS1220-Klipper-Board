@@ -1,7 +1,7 @@
 ## Concept
 This is a 3D printer Toolead board intended to print in a "high temperature" exclosure. 80C is the target limit. This is hot for consumer pastics (Nylon, PA) but not hot for industrial plastics (PEEK & PEI - 90  to 140C). This should provide good conditions for printing the new PPA based filaments.
 
-Because of the chamber temperature the 2 main parts that are most susceptible to heat are kept out of the chamber: the heater MOSFET and the stepper driver. The board features passthrough ports for these items to make connections easier.
+Because of the chamber temperature the 2 main parts that are most susceptible to heat are kept out of the chamber: the heater MOSFET and the stepper driver.
 
 ## Features
 
@@ -10,23 +10,22 @@ Because of the chamber temperature the 2 main parts that are most susceptible to
 * 2 x 3 pin Fan ports with RPM monitoring (Heatbreak Cooler & Part Cooler). Max 2A power draw for the fans, limited by the input pin.
 * 1 x 2 pin PTC100 port for Hot End temperature using the MAX31865 RTD Sensor (can alternatly be built for PT1000)
 * 1 x 2 pin NTC thermistor port for Heatbreak temperature monitoring
-* 1 x 4 pin Neopixel/Dotstar port supplied with 5V/500mA for toolhead lighting
-* On board NTC thermistor for board temperature monitoring
-* On board power conversion from 12V to 5V and 3.3V using a buck converter module and two LDOs for ADC reference level DC power supply. (Does not reply on your 5v or 3.3v source being noise free)
+* 1 x 4 pin Neopixel/Dotstar port for illuminating the print are supplied with 5V/500mA for toolhead lighting
+* On board NTC thermistor for board/ambient temperature monitoring
+* On board power conversion from 12V to 5V and 3.3V using a buck converter module and two LDOs for ADC reference level DC power supply. (Does not reley on your 5V or 3.3V source being noise free)
 * USB communication via wire pair in the main connector (no separate USB connector)
 * STM32 F103 Core M3 CPU @72Mhz
-* Singe wire debug port for flashing the MCU with Katapult
+* Singe wire debug port for flashing the MCU with [Katapult](https://github.com/Arksine/katapult)
 * Reset button
 * MCU Boot indicator LED - also indicates USB full speed pull-up enabled
+* Activity LEDs for both fans, 5V and 3.3V power
 * Molex CLIK-Mate connectors. Support up to 2A of current and are much nicer to use vs JST alternatives.
 * ESD protection on all I/O pins.
 * Guard Ring for ESD protection and grounding to chassis
 
-## Squaks
+## Squaks / TODO
 This section is a TODO list of issues and subjects not yet thought through:
 * Double check the pin assignments on the MCU for all pins. PWM, ADC, SPI etc.
-* Double check what unused pins on all components should be tied to: NC or GND
-* Re-Run via stitching
 
 ## References
 You cant learn anything quickly without looking at the work of others. I specifically want to credit:

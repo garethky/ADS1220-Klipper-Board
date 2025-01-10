@@ -21216,7 +21216,7 @@
 				)
 			)
 		)
-		(property "Value" "2?pF"
+		(property "Value" "25pF"
 			(at 66.04 182.88 90)
 			(effects
 				(font
@@ -21242,7 +21242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C0G / 25V / 10%"
+		(property "Description" "C0G / 25V / 1%"
 			(at 66.04 185.42 90)
 			(effects
 				(font
@@ -24903,7 +24903,7 @@
 				)
 			)
 		)
-		(property "Value" "2?pF"
+		(property "Value" "25pF"
 			(at 66.04 198.12 90)
 			(effects
 				(font
@@ -24929,7 +24929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "C0G / 25V / 10%"
+		(property "Description" "C0G / 25V / 1%"
 			(at 66.04 200.66 90)
 			(effects
 				(font
@@ -30944,7 +30944,7 @@
 		(fields_autoplaced yes)
 		(uuid "7838ce4e-e513-479a-8569-88312619ee67")
 		(property "Reference" "Y1"
-			(at 78.105 195.5799 90)
+			(at 77.47 195.5799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30952,8 +30952,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Crystal ECS-.327-6-34QCS-TR"
-			(at 78.105 198.1199 90)
+		(property "Value" "Crystal"
+			(at 77.47 198.1199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
