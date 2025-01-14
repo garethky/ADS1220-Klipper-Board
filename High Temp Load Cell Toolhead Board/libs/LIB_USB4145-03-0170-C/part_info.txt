@@ -1,0 +1,9 @@
+Manufacturer=GCT (GLOBAL CONNECTOR TECHNOLOGY)
+PartNumber=USB4145-03-0170-C
+PartCategory=Connector
+PackageCategory=Other
+PinCount=20
+Version=2.10
+Released=2022-12-22 06:14:37
+Downloaded=2025-01-14 03:15:43
+3D=Y

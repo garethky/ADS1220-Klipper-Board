@@ -1,0 +1,9 @@
+(version 1)
+# implement differential pairs with different width for inner layers
+(rule "Differential Pair on Inner Layer"
+	(layer inner)
+	(condition "A.NetClass == 'Digital Pair'")
+	(condition "A.inDiffPair('*')")
+	(constraint diff_pair_gap (max 0.3048mm) (opt 0.3048mm))
+	(constraint track_width (max 0.14986mm) (opt 0.14986mm))
+)

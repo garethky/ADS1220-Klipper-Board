@@ -5,4 +5,6 @@
   (lib (name "AQ4020-01FTG")(type "KiCad")(uri "${KIPRJMOD}/libs/AQ4020-01FTG")(options "")(descr ""))
   (lib (name "SNAL_TLVM23615RDNR")(type "KiCad")(uri "${KIPRJMOD}/libs/SNAP_TLVM23615RDNR")(options "")(descr ""))
   (lib (name "ECS-.327-6-34QCS-TR")(type "KiCad")(uri "${KIPRJMOD}/libs/ECS-.327-6-34QCS-TR")(options "")(descr ""))
+  (lib (name "CSD17581Q3A")(type "KiCad")(uri "${KIPRJMOD}/libs/CSD17581Q3A")(options "")(descr ""))
+  (lib (name "GCT_USB4145-03-0170-C")(type "KiCad")(uri "${KIPRJMOD}/libs/LIB_USB4145-03-0170-C")(options "")(descr ""))
 )

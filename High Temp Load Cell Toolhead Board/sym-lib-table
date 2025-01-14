@@ -4,4 +4,5 @@
   (lib (name "AQ4020-01FTG")(type "KiCad")(uri "${KIPRJMOD}/libs/AQ4020-01FTG/AQ4020-01FTG.kicad_sym")(options "")(descr ""))
   (lib (name "TLVM23615RDNR")(type "KiCad")(uri "${KIPRJMOD}/libs/ULTRA_TLVM23615RDNR/2024-12-20_22-14-55.kicad_sym")(options "")(descr ""))
   (lib (name "SN74LVC2G17DSFR")(type "KiCad")(uri "${KIPRJMOD}/libs/SN74LVC2G17DSFR/SN74LVC2G17DSFR.kicad_sym")(options "")(descr ""))
+  (lib (name "CSD17581Q3A")(type "KiCad")(uri "${KIPRJMOD}/libs/CSD17581Q3A/CSD17581Q3A.kicad_sym")(options "")(descr ""))
 )
