@@ -1,4 +1,5 @@
 (version 1)
+
 # implement differential pairs with different width for inner layers
 (rule "Differential Pair on Inner Layer"
 	(layer inner)
@@ -6,4 +7,18 @@
 	(condition "A.inDiffPair('*')")
 	(constraint diff_pair_gap (max 0.3048mm) (opt 0.3048mm))
 	(constraint track_width (max 0.14986mm) (opt 0.14986mm))
+)
+
+# implement routing on an outer layer for 50 Ohm traces
+(rule "Route 50 Ohm on outer layer"
+	(layer outer)
+	(condition "A.NetClass == 'ADC Signal' || A.NetClass == 'Digital Signal'" )
+	(constraint track_width (opt 0.2286mm))
+)
+
+# implement routing on an inner layer with a smaller wire size automatically
+(rule "Route 50 Ohm on inner layer"
+	(layer inner)
+	(condition "A.NetClass == 'ADC Signal' || A.NetClass == 'Digital Signal'" )
+	(constraint track_width (opt 0.16002mm))
 )

@@ -65,10 +65,17 @@
         {
           "gap": 0.3048,
           "via_gap": 0.3048,
-          "width": 0.17272
+          "width": 0.2286
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "via_dangling|51000000|19900000|14c2d051-3817-4d71-bcdb-594021eb1bb1|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|20700000|ec5f2e55-a61c-46b3-bb55-dec9da870cb3|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|21500000|3ba8738f-95bb-47ef-9b75-fcd85aed2e42|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|31800000|d3199580-430f-45ae-b937-9b1253bb223c|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|32600000|406eea5d-16ab-47a8-a3cb-8f1226db7e78|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|33400000|4af2b6e9-2d2b-4c84-a664-644e338af913|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -189,7 +196,6 @@
       ],
       "track_widths": [
         0.0,
-        0.14986,
         0.16002,
         0.2,
         0.2286,
@@ -262,7 +268,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "label_dangling|901700|368300|cbe116e1-f776-448f-9a45-750a70c56377|00000000-0000-0000-0000-000000000000|/d7aad515-c17a-476a-b840-00742bfe5422||"
+    ],
     "meta": {
       "version": 0
     },
@@ -487,7 +495,7 @@
         "clearance": 0.127,
         "diff_pair_gap": 0.3048,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.14986,
+        "diff_pair_width": 0.2286,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -521,7 +529,7 @@
         "clearance": 0.127,
         "diff_pair_gap": 0.3048,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2286,
+        "diff_pair_width": 0.16002,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -561,6 +569,7 @@
       "+5V": "rgb(194, 0, 0)",
       "+5V5": "rgb(132, 0, 0)",
       "+5V75": "rgb(72, 0, 72)",
+      "+5VA": "rgb(255, 0, 146)",
       "/+12V Dirty": "rgb(128, 77, 0)",
       "/+24V_INPUT": "rgb(128, 77, 0)",
       "/+FANV_INPUT": "rgb(204, 102, 0)",
@@ -569,12 +578,23 @@
       "GND": "rgb(0, 132, 0)"
     },
     "netclass_assignments": {
+      "+5VA": "ADC Signal",
+      "/AIN0": "ADC Signal",
+      "/AIN1": "ADC Signal",
       "/FAN0_PWM_+5V": "Digital Signal",
       "/FAN1_PWM_+5V": "Digital Signal",
       "/HEATBREAK_TH_GND": "ADC Signal",
       "/HEATBREAK_TH_VREF": "ADC Signal",
+      "/HOTEND_TH_GND": "ADC Signal",
+      "/HOTEND_TH_VREF": "ADC Signal",
       "/LED_CLK": "Digital Signal",
       "/LED_SDI": "Digital Signal",
+      "/LOAD_CELL_IN+": "ADC Signal",
+      "/LOAD_CELL_IN-": "ADC Signal",
+      "/LOAD_CELL_REF+": "ADC Signal",
+      "/LOAD_CELL_REF-": "ADC Signal",
+      "/OSC_IN": "Digital Signal",
+      "/OSC_OUT": "Digital Signal",
       "/PT100+": "ADC Signal",
       "/PT100-": "ADC Signal",
       "/PT1000+": "ADC Signal",
@@ -584,17 +604,22 @@
       "ADS1220_DRDY": "Digital Signal",
       "ADXL345_CS": "Digital Signal",
       "AMBIENT_THERMISTOR": "ADC Signal",
+      "BOOT0": "Digital Signal",
       "FAN0_PWM": "Digital Signal",
       "FAN0_TACH": "Digital Signal",
       "FAN1_PWM": "Digital Signal",
       "FAN1_TACH": "Digital Signal",
       "FILAMENT_SW": "ADC Signal",
+      "GND": "ADC Signal",
       "HEATBREAK_THERMISTOR": "ADC Signal",
+      "HOTEND_THERMISTOR": "ADC Signal",
+      "INDICATOR_LED": "Digital Signal",
       "LED_CLK": "Digital Signal",
       "LED_MCU_CLK": "Digital Signal",
       "LED_MCU_SDO": "Digital Signal",
       "LED_SDO": "Digital Signal",
       "MAX31865_CS": "Digital Signal",
+      "NRST": "Digital Signal",
       "Net-(AC1-SDA{slash}SDI{slash}SDIO)": "Digital Signal",
       "Net-(L4-Pad2)": "ADC Signal",
       "Net-(L5-Pad1)": "ADC Signal",
@@ -614,24 +639,13 @@
       "SWD_IO": "Digital Signal",
       "SW_CLK": "Digital Signal",
       "USB_D+": "Digital Pair",
-      "USB_D-": "Digital Pair"
+      "USB_D-": "Digital Pair",
+      "USB_PULL_UP": "Digital Signal"
     },
     "netclass_patterns": [
       {
-        "netclass": "ADC Signal",
-        "pattern": "/LOAD_CELL_*"
-      },
-      {
-        "netclass": "ADC Signal",
-        "pattern": "/AIN*"
-      },
-      {
         "netclass": "Digital Pair",
         "pattern": "USB_D*"
-      },
-      {
-        "netclass": "Digital Signal",
-        "pattern": "SPI*"
       }
     ]
   },

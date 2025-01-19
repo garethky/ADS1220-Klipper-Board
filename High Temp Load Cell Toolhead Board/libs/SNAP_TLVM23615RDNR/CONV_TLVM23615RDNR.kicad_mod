@@ -1684,4 +1684,15 @@
 		(roundrect_rratio 0.3)
 		(uuid "2ce95b48-d433-4c08-a74b-88cfb7aa3cf9")
 	)
+	(model "${KIPRJMOD}/libs/ULTRA_TLVM23615RDNR/RDN0011A.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
