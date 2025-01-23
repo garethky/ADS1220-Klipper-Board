@@ -4401,6 +4401,293 @@
 				)
 			)
 		)
+		(symbol "LED:APA102-2020"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "APA102-2020"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED-APA102-2020"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED addressable 8bit pwm 5bit greyscale"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*APA102*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "APA102-2020_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "APA102-2020_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "APA102-2020_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "CKO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "CKI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "MCU_ST_STM32F1:STM32F103CBUx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -8364,7 +8651,7 @@
 		(uuid "385ee02b-d069-481e-84a1-d8986fa5bb8e")
 	)
 	(junction
-		(at 504.19 263.525)
+		(at 504.19 261.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3881a085-35bc-4b22-ab65-80d90841fa15")
@@ -8472,7 +8759,7 @@
 		(uuid "6256de7b-b0ab-495d-b47f-bcfd2859e0b5")
 	)
 	(junction
-		(at 448.945 222.25)
+		(at 448.945 220.345)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "654648cf-6dcf-40c5-876c-ad5ac6650559")
@@ -8496,7 +8783,7 @@
 		(uuid "7414c6aa-0ec7-43c9-a272-1f1d351ee87c")
 	)
 	(junction
-		(at 504.19 254)
+		(at 504.19 252.095)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76874569-4d0c-46ae-94a6-5d6fb0d01032")
@@ -8514,7 +8801,7 @@
 		(uuid "7988386f-27ee-46dd-82d1-0c41175b053c")
 	)
 	(junction
-		(at 448.945 208.28)
+		(at 448.945 206.375)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d044e18-f50f-42e4-bca0-4a31fe0f5bb2")
@@ -8592,7 +8879,7 @@
 		(uuid "95b104b0-2fac-441f-ac20-a86e96f03bd0")
 	)
 	(junction
-		(at 504.19 247.65)
+		(at 504.19 245.745)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a124c93f-aa47-45f7-a253-3f05cdafc299")
@@ -8700,12 +8987,6 @@
 		(uuid "c31c1e83-d03c-4f2a-ac50-831880adda8f")
 	)
 	(junction
-		(at 448.945 249.555)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4104ac2-7dec-4078-822a-ee87daa08a42")
-	)
-	(junction
 		(at 70.485 97.155)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8748,7 +9029,7 @@
 		(uuid "ce74cc44-c9c1-476c-9171-a7eaaf104b3e")
 	)
 	(junction
-		(at 448.945 236.22)
+		(at 448.945 234.315)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d34e9cfc-8bf9-4a48-936a-386fbfc31ddb")
@@ -8772,7 +9053,7 @@
 		(uuid "d7d19308-00f7-47cb-9018-526265492d45")
 	)
 	(junction
-		(at 504.19 259.08)
+		(at 504.19 257.175)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dcea9509-e59b-46bf-9b9a-6aee49d0851c")
@@ -8856,6 +9137,10 @@
 		(uuid "252b2658-6ae1-41f2-be4d-c9ae3d7ccf63")
 	)
 	(no_connect
+		(at 560.705 194.31)
+		(uuid "260ced6e-399e-4a2c-8313-011d8d6afb2e")
+	)
+	(no_connect
 		(at 105.41 234.315)
 		(uuid "2ae1cf6b-a36a-4bb8-9bee-e13acda070f4")
 	)
@@ -8904,12 +9189,12 @@
 		(uuid "8b17e4f3-6bab-42cf-9c0f-5078198f840c")
 	)
 	(no_connect
-		(at 138.43 206.375)
-		(uuid "8d9feff3-4f7a-4b23-9b26-759c02ca375d")
-	)
-	(no_connect
 		(at 138.43 198.755)
 		(uuid "9318a65d-eec0-405c-9993-db96f612669b")
+	)
+	(no_connect
+		(at 560.705 191.77)
+		(uuid "94bb238d-2bf6-44b5-b86f-f7f71a34d231")
 	)
 	(no_connect
 		(at 105.41 236.855)
@@ -8983,13 +9268,13 @@
 	)
 	(wire
 		(pts
-			(xy 404.495 249.555) (xy 409.575 249.555)
+			(xy 523.24 193.675) (xy 520.7 193.675)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "02c87f27-bbe9-4d42-863c-e179f9d8c186")
+		(uuid "03a44882-6e39-4c41-9771-e0c34458295e")
 	)
 	(wire
 		(pts
@@ -9113,7 +9398,7 @@
 	)
 	(wire
 		(pts
-			(xy 448.945 222.25) (xy 448.945 236.22)
+			(xy 448.945 220.345) (xy 448.945 234.315)
 		)
 		(stroke
 			(width 0)
@@ -9153,7 +9438,7 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 269.24) (xy 408.94 269.24)
+			(xy 388.62 254.635) (xy 408.94 254.635)
 		)
 		(stroke
 			(width 0)
@@ -9183,7 +9468,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 269.24) (xy 420.37 269.24)
+			(xy 416.56 254.635) (xy 420.37 254.635)
 		)
 		(stroke
 			(width 0)
@@ -9303,7 +9588,7 @@
 	)
 	(wire
 		(pts
-			(xy 428.625 194.31) (xy 448.945 194.31)
+			(xy 428.625 192.405) (xy 448.945 192.405)
 		)
 		(stroke
 			(width 0)
@@ -9540,6 +9825,16 @@
 			(type default)
 		)
 		(uuid "1d68527d-7827-413f-9e85-56e87e39c4c6")
+	)
+	(wire
+		(pts
+			(xy 520.7 191.135) (xy 545.465 191.135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e27001e-39d3-408f-9bf4-405c50a1a456")
 	)
 	(wire
 		(pts
@@ -9803,16 +10098,6 @@
 	)
 	(wire
 		(pts
-			(xy 448.945 236.22) (xy 448.945 249.555)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cd65b43-bc60-4c1a-9fbe-fa9fe437675a")
-	)
-	(wire
-		(pts
 			(xy 143.51 48.26) (xy 143.51 59.69)
 		)
 		(stroke
@@ -10053,7 +10338,7 @@
 	)
 	(wire
 		(pts
-			(xy 504.19 247.65) (xy 521.97 247.65)
+			(xy 504.19 245.745) (xy 521.97 245.745)
 		)
 		(stroke
 			(width 0)
@@ -10073,7 +10358,7 @@
 	)
 	(wire
 		(pts
-			(xy 504.19 263.525) (xy 504.19 264.16)
+			(xy 504.19 261.62) (xy 504.19 262.255)
 		)
 		(stroke
 			(width 0)
@@ -10253,6 +10538,16 @@
 	)
 	(wire
 		(pts
+			(xy 545.465 197.485) (xy 545.465 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43dcd371-ffe1-4253-9ba3-051341205325")
+	)
+	(wire
+		(pts
 			(xy 518.795 36.83) (xy 518.795 38.1)
 		)
 		(stroke
@@ -10293,7 +10588,7 @@
 	)
 	(wire
 		(pts
-			(xy 504.19 259.08) (xy 504.19 263.525)
+			(xy 504.19 257.175) (xy 504.19 261.62)
 		)
 		(stroke
 			(width 0)
@@ -10343,7 +10638,7 @@
 	)
 	(wire
 		(pts
-			(xy 450.85 269.24) (xy 427.99 269.24)
+			(xy 450.85 254.635) (xy 427.99 254.635)
 		)
 		(stroke
 			(width 0)
@@ -10353,7 +10648,7 @@
 	)
 	(wire
 		(pts
-			(xy 504.19 263.525) (xy 509.27 263.525)
+			(xy 504.19 261.62) (xy 509.27 261.62)
 		)
 		(stroke
 			(width 0)
@@ -10493,7 +10788,7 @@
 	)
 	(wire
 		(pts
-			(xy 499.745 259.08) (xy 504.19 259.08)
+			(xy 499.745 257.175) (xy 504.19 257.175)
 		)
 		(stroke
 			(width 0)
@@ -10523,7 +10818,7 @@
 	)
 	(wire
 		(pts
-			(xy 521.97 267.97) (xy 521.97 263.525)
+			(xy 521.97 266.065) (xy 521.97 261.62)
 		)
 		(stroke
 			(width 0)
@@ -10633,7 +10928,7 @@
 	)
 	(wire
 		(pts
-			(xy 504.19 247.65) (xy 504.19 254)
+			(xy 504.19 245.745) (xy 504.19 252.095)
 		)
 		(stroke
 			(width 0)
@@ -10653,7 +10948,7 @@
 	)
 	(wire
 		(pts
-			(xy 409.575 222.25) (xy 404.495 222.25)
+			(xy 409.575 220.345) (xy 404.495 220.345)
 		)
 		(stroke
 			(width 0)
@@ -10693,7 +10988,7 @@
 	)
 	(wire
 		(pts
-			(xy 416.56 284.48) (xy 420.37 284.48)
+			(xy 416.56 269.875) (xy 420.37 269.875)
 		)
 		(stroke
 			(width 0)
@@ -10773,7 +11068,7 @@
 	)
 	(wire
 		(pts
-			(xy 417.195 222.25) (xy 421.005 222.25)
+			(xy 417.195 220.345) (xy 421.005 220.345)
 		)
 		(stroke
 			(width 0)
@@ -10803,7 +11098,7 @@
 	)
 	(wire
 		(pts
-			(xy 448.945 194.31) (xy 448.945 208.28)
+			(xy 448.945 192.405) (xy 448.945 206.375)
 		)
 		(stroke
 			(width 0)
@@ -10830,16 +11125,6 @@
 			(type default)
 		)
 		(uuid "5aa11404-3df2-44c5-b8c3-f6d72cfdbb7f")
-	)
-	(wire
-		(pts
-			(xy 417.195 249.555) (xy 421.005 249.555)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5aa4b61d-b9b7-4baf-b369-6e2b0a50dc7f")
 	)
 	(wire
 		(pts
@@ -11103,7 +11388,7 @@
 	)
 	(wire
 		(pts
-			(xy 421.005 194.31) (xy 417.195 194.31)
+			(xy 421.005 192.405) (xy 417.195 192.405)
 		)
 		(stroke
 			(width 0)
@@ -11193,7 +11478,7 @@
 	)
 	(wire
 		(pts
-			(xy 428.625 222.25) (xy 448.945 222.25)
+			(xy 428.625 220.345) (xy 448.945 220.345)
 		)
 		(stroke
 			(width 0)
@@ -11803,7 +12088,17 @@
 	)
 	(wire
 		(pts
-			(xy 409.575 208.28) (xy 404.495 208.28)
+			(xy 553.085 183.515) (xy 553.085 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2afb52-1c0e-4a74-8140-1d8de9335e68")
+	)
+	(wire
+		(pts
+			(xy 409.575 206.375) (xy 404.495 206.375)
 		)
 		(stroke
 			(width 0)
@@ -11823,7 +12118,7 @@
 	)
 	(wire
 		(pts
-			(xy 448.945 249.555) (xy 448.945 257.81)
+			(xy 448.945 234.315) (xy 448.945 238.125)
 		)
 		(stroke
 			(width 0)
@@ -11843,17 +12138,7 @@
 	)
 	(wire
 		(pts
-			(xy 448.945 249.555) (xy 428.625 249.555)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dbca7a9-6bb6-4920-969f-43f19c970379")
-	)
-	(wire
-		(pts
-			(xy 504.19 254) (xy 521.97 254)
+			(xy 504.19 252.095) (xy 521.97 252.095)
 		)
 		(stroke
 			(width 0)
@@ -11863,7 +12148,7 @@
 	)
 	(wire
 		(pts
-			(xy 417.195 208.28) (xy 421.005 208.28)
+			(xy 417.195 206.375) (xy 421.005 206.375)
 		)
 		(stroke
 			(width 0)
@@ -11920,6 +12205,16 @@
 			(type default)
 		)
 		(uuid "8fc81c83-e08d-473d-9f30-306b088c08f5")
+	)
+	(wire
+		(pts
+			(xy 553.085 204.47) (xy 553.085 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fd47166-696c-40d9-a5f7-7ae5fbad49e7")
 	)
 	(wire
 		(pts
@@ -12013,6 +12308,16 @@
 	)
 	(wire
 		(pts
+			(xy 520.7 197.485) (xy 545.465 197.485)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9613d6c5-a086-4a8d-9791-e5e70673e263")
+	)
+	(wire
+		(pts
 			(xy 90.805 307.975) (xy 90.805 311.15)
 		)
 		(stroke
@@ -12053,7 +12358,7 @@
 	)
 	(wire
 		(pts
-			(xy 409.575 194.31) (xy 404.495 194.31)
+			(xy 409.575 192.405) (xy 404.495 192.405)
 		)
 		(stroke
 			(width 0)
@@ -12223,7 +12528,7 @@
 	)
 	(wire
 		(pts
-			(xy 486.41 247.65) (xy 504.19 247.65)
+			(xy 486.41 245.745) (xy 504.19 245.745)
 		)
 		(stroke
 			(width 0)
@@ -12473,7 +12778,7 @@
 	)
 	(wire
 		(pts
-			(xy 521.97 263.525) (xy 516.89 263.525)
+			(xy 521.97 261.62) (xy 516.89 261.62)
 		)
 		(stroke
 			(width 0)
@@ -12563,7 +12868,7 @@
 	)
 	(wire
 		(pts
-			(xy 388.62 284.48) (xy 408.94 284.48)
+			(xy 388.62 269.875) (xy 408.94 269.875)
 		)
 		(stroke
 			(width 0)
@@ -12683,6 +12988,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.335 206.375) (xy 138.43 206.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba117748-a2d3-4d43-b83f-5225bf56c0e4")
+	)
+	(wire
+		(pts
 			(xy 339.725 360.045) (xy 348.615 360.045)
 		)
 		(stroke
@@ -12720,6 +13035,16 @@
 			(type default)
 		)
 		(uuid "bb821e3e-e668-4288-b39b-3c573488f48c")
+	)
+	(wire
+		(pts
+			(xy 545.465 191.135) (xy 545.465 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc4716ea-865e-4251-9c03-abc5d95d45c7")
 	)
 	(wire
 		(pts
@@ -12983,7 +13308,7 @@
 	)
 	(wire
 		(pts
-			(xy 404.495 236.22) (xy 409.575 236.22)
+			(xy 404.495 234.315) (xy 409.575 234.315)
 		)
 		(stroke
 			(width 0)
@@ -13023,7 +13348,7 @@
 	)
 	(wire
 		(pts
-			(xy 448.945 208.28) (xy 448.945 222.25)
+			(xy 448.945 206.375) (xy 448.945 220.345)
 		)
 		(stroke
 			(width 0)
@@ -13273,7 +13598,7 @@
 	)
 	(wire
 		(pts
-			(xy 450.85 284.48) (xy 427.99 284.48)
+			(xy 450.85 269.875) (xy 427.99 269.875)
 		)
 		(stroke
 			(width 0)
@@ -13303,7 +13628,7 @@
 	)
 	(wire
 		(pts
-			(xy 486.41 254) (xy 504.19 254)
+			(xy 486.41 252.095) (xy 504.19 252.095)
 		)
 		(stroke
 			(width 0)
@@ -13330,6 +13655,16 @@
 			(type default)
 		)
 		(uuid "d6e40533-272c-4e97-a755-e76dcaedf100")
+	)
+	(wire
+		(pts
+			(xy 520.7 197.485) (xy 520.7 196.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7a39dbf-02d2-4c25-98a0-f678fc6f7f70")
 	)
 	(wire
 		(pts
@@ -13373,7 +13708,7 @@
 	)
 	(wire
 		(pts
-			(xy 448.945 236.22) (xy 428.625 236.22)
+			(xy 448.945 234.315) (xy 428.625 234.315)
 		)
 		(stroke
 			(width 0)
@@ -13643,7 +13978,7 @@
 	)
 	(wire
 		(pts
-			(xy 504.19 254) (xy 504.19 259.08)
+			(xy 504.19 252.095) (xy 504.19 257.175)
 		)
 		(stroke
 			(width 0)
@@ -13763,7 +14098,7 @@
 	)
 	(wire
 		(pts
-			(xy 428.625 208.28) (xy 448.945 208.28)
+			(xy 428.625 206.375) (xy 448.945 206.375)
 		)
 		(stroke
 			(width 0)
@@ -14033,7 +14368,7 @@
 	)
 	(wire
 		(pts
-			(xy 417.195 236.22) (xy 421.005 236.22)
+			(xy 417.195 234.315) (xy 421.005 234.315)
 		)
 		(stroke
 			(width 0)
@@ -14106,8 +14441,8 @@
 		(uuid 183b5da2-76b3-45b4-b567-f1e58c0b3d39)
 	)
 	(rectangle
-		(start 482.6 234.95)
-		(end 563.245 275.59)
+		(start 482.6 233.045)
+		(end 563.245 273.685)
 		(stroke
 			(width 0)
 			(type default)
@@ -14202,8 +14537,8 @@
 		(uuid 7c3269f2-6a8d-4627-8136-80e4cd722282)
 	)
 	(rectangle
-		(start 384.81 177.165)
-		(end 453.39 288.925)
+		(start 384.81 175.26)
+		(end 453.39 275.59)
 		(stroke
 			(width 0)
 			(type default)
@@ -14334,6 +14669,18 @@
 		(uuid db57a517-a23c-4de3-98bd-6dcbfc53f4d5)
 	)
 	(rectangle
+		(start 455.93 175.26)
+		(end 574.675 213.36)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid dd39e8ff-a35e-4ebc-8a03-39c4a75845e9)
+	)
+	(rectangle
 		(start 14.605 69.215)
 		(end 92.71 125.095)
 		(stroke
@@ -14359,7 +14706,7 @@
 	)
 	(text_box "Earth to Ground connection (D3) is optional. Included for testing."
 		(exclude_from_sim no)
-		(at 538.48 257.175 0)
+		(at 538.48 255.27 0)
 		(size 22.86 11.43)
 		(stroke
 			(width 0)
@@ -14429,7 +14776,7 @@
 	)
 	(text "Indicator LEDs"
 		(exclude_from_sim no)
-		(at 419.1 179.832 0)
+		(at 419.1 177.927 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14517,6 +14864,16 @@
 		)
 		(uuid "9394ffa9-42df-4535-b3f2-c41e3778335d")
 	)
+	(text "RGB INDICATOR LED"
+		(exclude_from_sim no)
+		(at 503.555 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "947fc169-d80d-4847-bfaf-ba4f88ef46ed")
+	)
 	(text "5.5V to 5V Load Cell Power LDO"
 		(exclude_from_sim no)
 		(at 215.265 72.009 0)
@@ -14569,7 +14926,7 @@
 	)
 	(text "Mounting and Guard Ring"
 		(exclude_from_sim no)
-		(at 508 237.744 0)
+		(at 508 235.839 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14880,7 +15237,7 @@
 		)
 	)
 	(label "FAN1_MOSFET_GND"
-		(at 450.85 284.48 180)
+		(at 450.85 269.875 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14891,7 +15248,7 @@
 		(uuid "495af8d2-b176-4043-9a9d-5541d15f46de")
 	)
 	(label "+FANV_INPUT"
-		(at 388.62 284.48 0)
+		(at 388.62 269.875 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15009,6 +15366,17 @@
 		)
 		(uuid "61ab22c5-4bc2-407c-9b25-21dc1bdb6ff8")
 	)
+	(label "RGB_INDICATOR_SDO"
+		(at 520.7 191.135 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69fec64e-c4cc-427f-8a14-a39f5a82277b")
+	)
 	(label "FAN1_MOSFET_GND"
 		(at 162.56 342.9 0)
 		(fields_autoplaced yes)
@@ -15043,7 +15411,7 @@
 		(uuid "6d61dc36-2b79-4171-8549-95d69eb809bc")
 	)
 	(label "+FANV_INPUT"
-		(at 388.62 269.24 0)
+		(at 388.62 254.635 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15152,7 +15520,7 @@
 		)
 	)
 	(label "FAN0_MOSFET_GND"
-		(at 450.85 269.24 180)
+		(at 450.85 254.635 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15270,6 +15638,17 @@
 			(justify left bottom)
 		)
 		(uuid "aa28432b-ccf0-4750-9c2b-d18da8c4df63")
+	)
+	(label "RGB_INDICATOR_CLK"
+		(at 520.7 197.485 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae367ebf-8b7d-478c-bc98-137024dcb5bc")
 	)
 	(label "LOAD_CELL_REF+"
 		(at 119.38 322.58 0)
@@ -15782,7 +16161,7 @@
 	)
 	(global_label "USB_PULL_UP"
 		(shape input)
-		(at 404.495 236.22 180)
+		(at 404.495 234.315 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15792,7 +16171,7 @@
 		)
 		(uuid "47913dbb-12a9-4273-8844-411e7058ce12")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 388.5074 236.22 0)
+			(at 388.5074 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15943,38 +16322,6 @@
 			)
 		)
 	)
-	(global_label "INDICATOR_LED"
-		(shape input)
-		(at 140.335 203.835 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "68287b31-3923-4338-a120-7f390c3e4cfc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.4717 203.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Netclass" "Digital Signal"
-			(at 140.335 206.0258 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "AMBIENT_THERMISTOR"
 		(shape input)
 		(at 103.505 216.535 180)
@@ -16042,6 +16389,28 @@
 		(uuid "739dbca6-9f90-4613-a687-6e2b8e6c96d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 153.1778 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INDICATOR_LED_CLK"
+		(shape input)
+		(at 140.335 203.835 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7407dea7-3f28-4f30-9087-ca23c913a708")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.0074 203.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16407,6 +16776,28 @@
 			)
 		)
 	)
+	(global_label "INDICATOR_LED_SDO"
+		(shape input)
+		(at 140.335 206.375 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ad9325ed-fd9e-4183-a744-7f88ffc7d078")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.2493 206.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI_1_SCLK"
 		(shape input)
 		(at 544.83 55.88 0)
@@ -16474,28 +16865,6 @@
 		)
 		(property "Netclass" "Digital Signal"
 			(at 103.505 190.7858 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "INDICATOR_LED"
-		(shape input)
-		(at 405.13 249.555 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b3ba3da6-6166-430a-ae1a-5c555b96df61")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 387.9933 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16577,6 +16946,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "INDICATOR_LED_CLK"
+		(shape input)
+		(at 480.06 191.135 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c7e7acda-0a7c-4d5d-8b25-71e856f3bc0a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 458.3876 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -16902,6 +17293,28 @@
 			)
 		)
 	)
+	(global_label "INDICATOR_LED_SDO"
+		(shape input)
+		(at 480.06 196.215 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f93aaa04-a508-4b74-bbbc-403a2ef0e64f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 458.1457 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED_MCU_CLK"
 		(shape input)
 		(at 288.29 57.785 180)
@@ -17003,7 +17416,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 424.815 236.22 180)
+		(at 424.815 234.315 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17012,7 +17425,7 @@
 		(fields_autoplaced yes)
 		(uuid "00251ce6-d733-4671-abc5-d2e940642276")
 		(property "Reference" "D6"
-			(at 426.4025 228.6 0)
+			(at 426.4025 226.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17020,7 +17433,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 426.4025 231.14 0)
+			(at 426.4025 229.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17028,7 +17441,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17037,7 +17450,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17046,7 +17459,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17055,7 +17468,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17064,7 +17477,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17073,7 +17486,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17082,7 +17495,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17091,7 +17504,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17100,7 +17513,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17109,7 +17522,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17118,7 +17531,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17127,7 +17540,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 424.815 236.22 0)
+			(at 424.815 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17152,7 +17565,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 413.385 208.28 270)
+		(at 413.385 206.375 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17162,7 +17575,7 @@
 		(fields_autoplaced yes)
 		(uuid "012db718-740b-4ee1-85a4-3671e01d7396")
 		(property "Reference" "R9"
-			(at 413.385 201.295 90)
+			(at 413.385 199.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17170,7 +17583,7 @@
 			)
 		)
 		(property "Value" "R2kΩ"
-			(at 413.385 203.835 90)
+			(at 413.385 201.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17178,7 +17591,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 413.385 210.058 90)
+			(at 413.385 208.153 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17187,7 +17600,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 413.385 208.28 0)
+			(at 413.385 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17196,7 +17609,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 413.385 205.105 90)
+			(at 413.385 203.2 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -17204,7 +17617,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 413.385 208.28 0)
+			(at 413.385 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17213,7 +17626,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 413.385 208.28 0)
+			(at 413.385 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17222,7 +17635,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 413.385 208.28 0)
+			(at 413.385 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17231,7 +17644,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 413.385 208.28 0)
+			(at 413.385 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17240,7 +17653,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 413.385 208.28 0)
+			(at 413.385 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17249,7 +17662,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 413.385 208.28 0)
+			(at 413.385 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19455,7 +19868,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 424.815 222.25 0)
+		(at 424.815 220.345 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19465,7 +19878,7 @@
 		(fields_autoplaced yes)
 		(uuid "0cd5c1a4-ab71-4ee6-ad81-057b4a9f4bd0")
 		(property "Reference" "D17"
-			(at 426.4025 215.9 0)
+			(at 426.4025 213.995 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19473,7 +19886,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 426.4025 218.44 0)
+			(at 426.4025 216.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19481,7 +19894,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19490,7 +19903,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19499,7 +19912,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19508,7 +19921,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19517,7 +19930,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19526,7 +19939,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19535,7 +19948,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19544,7 +19957,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19553,7 +19966,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19562,7 +19975,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19571,7 +19984,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19580,7 +19993,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 424.815 222.25 0)
+			(at 424.815 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20100,6 +20513,81 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 553.085 183.515 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11c1a25b-faeb-4739-8dd0-ccd2f2282169")
+		(property "Reference" "#PWR0101"
+			(at 553.085 187.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 553.085 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 553.085 183.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 553.085 183.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 553.085 183.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Part_Number" ""
+			(at 553.085 183.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61222e71-b6e8-4a8e-a372-c20fd2aa9ae2")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 311.785 379.73 0)
 		(unit 1)
@@ -20477,7 +20965,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 413.385 236.22 270)
+		(at 413.385 234.315 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20486,7 +20974,7 @@
 		(fields_autoplaced yes)
 		(uuid "16516bf5-64e0-49c2-b5d6-dc005effd8cd")
 		(property "Reference" "R10"
-			(at 413.385 229.235 90)
+			(at 413.385 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20494,7 +20982,7 @@
 			)
 		)
 		(property "Value" "R1kΩ"
-			(at 413.385 231.775 90)
+			(at 413.385 229.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20502,7 +20990,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 413.385 234.442 90)
+			(at 413.385 232.537 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20511,7 +20999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 413.385 236.22 0)
+			(at 413.385 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20520,7 +21008,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 413.385 233.045 90)
+			(at 413.385 231.14 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -20528,7 +21016,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 413.385 236.22 0)
+			(at 413.385 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20537,7 +21025,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 413.385 236.22 0)
+			(at 413.385 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20546,7 +21034,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 413.385 236.22 0)
+			(at 413.385 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20555,7 +21043,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 413.385 236.22 0)
+			(at 413.385 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20564,7 +21052,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 413.385 236.22 0)
+			(at 413.385 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20573,7 +21061,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 413.385 236.22 0)
+			(at 413.385 234.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20836,6 +21324,201 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SN74LVC2G17DSFR:SN74LVC2G17DSFR")
+		(at 480.06 191.135 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19c75e96-55d0-47e5-bcf0-15e6aae0adfa")
+		(property "Reference" "U4"
+			(at 500.38 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC2G17DSFR"
+			(at 500.38 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf"
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "IC BUFFER 2 CHANNEL NON-INVERT 5.5V 6SON"
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C6076"
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.1"
+			(at 504.19 586.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "771-LVC1G17GV125"
+			(at 504.19 686.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Nexperia/74LVC1G17GV125?qs=me8TqzrmIYX3DxU5Fpa8sQ%3D%3D"
+			(at 504.19 786.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Nexperia"
+			(at 504.19 886.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "74LVC1G17GV,125"
+			(at 504.19 986.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Digikey"
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/nexperia-usa-inc/74LVC1G17GV-125/1231446"
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Part_Number" "1727-6070-1-ND"
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 480.06 191.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eaa123f6-0338-49a0-8b5a-17a3ece9ddb6")
+		)
+		(pin "3"
+			(uuid "4ed673fb-6770-40aa-8777-29043bf227e4")
+		)
+		(pin "4"
+			(uuid "88100308-b850-4841-af64-5be6756e1142")
+		)
+		(pin "5"
+			(uuid "ca11c7bd-1530-416d-92a6-8cbedc8fc2a3")
+		)
+		(pin "1"
+			(uuid "b07e76a6-3cba-449c-af69-87593d058f06")
+		)
+		(pin "6"
+			(uuid "948e2820-12e5-4684-96fe-d2f2d42cc6bc")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -21109,7 +21792,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 424.815 208.28 0)
+		(at 424.815 206.375 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21119,7 +21802,7 @@
 		(fields_autoplaced yes)
 		(uuid "2136128d-af84-4882-9046-ed61ddb07215")
 		(property "Reference" "D5"
-			(at 426.4025 201.93 0)
+			(at 426.4025 200.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21127,7 +21810,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 426.4025 204.47 0)
+			(at 426.4025 202.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21135,7 +21818,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21144,7 +21827,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21153,7 +21836,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21162,7 +21845,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21171,7 +21854,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21180,7 +21863,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21189,7 +21872,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21198,7 +21881,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21207,7 +21890,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21216,7 +21899,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21225,7 +21908,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21234,7 +21917,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 424.815 208.28 0)
+			(at 424.815 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21557,7 +22240,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 413.385 194.31 90)
+		(at 413.385 192.405 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21567,7 +22250,7 @@
 		(fields_autoplaced yes)
 		(uuid "259bb6ab-6fc0-423e-adf4-b026a7ae2856")
 		(property "Reference" "R15"
-			(at 413.385 187.325 90)
+			(at 413.385 185.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21575,7 +22258,7 @@
 			)
 		)
 		(property "Value" "R1kΩ"
-			(at 413.385 189.865 90)
+			(at 413.385 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21583,7 +22266,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 413.385 192.532 90)
+			(at 413.385 190.627 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21592,7 +22275,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 413.385 194.31 0)
+			(at 413.385 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21601,7 +22284,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 413.385 191.135 90)
+			(at 413.385 189.23 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -21609,7 +22292,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 413.385 194.31 0)
+			(at 413.385 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21618,7 +22301,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 413.385 194.31 0)
+			(at 413.385 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21627,7 +22310,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 413.385 194.31 0)
+			(at 413.385 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21636,7 +22319,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 413.385 194.31 0)
+			(at 413.385 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21645,7 +22328,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 413.385 194.31 0)
+			(at 413.385 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21654,7 +22337,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 413.385 194.31 0)
+			(at 413.385 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21679,7 +22362,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 413.385 222.25 270)
+		(at 413.385 220.345 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21689,7 +22372,7 @@
 		(fields_autoplaced yes)
 		(uuid "2690c71e-5224-478b-9fd0-4315dacd6c7c")
 		(property "Reference" "R12"
-			(at 413.385 215.265 90)
+			(at 413.385 213.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21697,7 +22380,7 @@
 			)
 		)
 		(property "Value" "R2kΩ"
-			(at 413.385 217.805 90)
+			(at 413.385 215.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21705,7 +22388,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 413.385 224.028 90)
+			(at 413.385 222.123 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21714,7 +22397,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 413.385 222.25 0)
+			(at 413.385 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21723,7 +22406,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 413.385 219.075 90)
+			(at 413.385 217.17 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -21731,7 +22414,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 413.385 222.25 0)
+			(at 413.385 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21740,7 +22423,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 413.385 222.25 0)
+			(at 413.385 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21749,7 +22432,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 413.385 222.25 0)
+			(at 413.385 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21758,7 +22441,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 413.385 222.25 0)
+			(at 413.385 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21767,7 +22450,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 413.385 222.25 0)
+			(at 413.385 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21776,7 +22459,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 413.385 222.25 0)
+			(at 413.385 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21918,155 +22601,6 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 424.815 249.555 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27ac9070-6448-44b6-b6b9-51982672b844")
-		(property "Reference" "D16"
-			(at 426.4025 241.935 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RED LED"
-			(at 426.4025 244.475 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digikey"
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 424.815 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43bd3ddc-79c5-4d68-a1eb-4e81071597a9")
-		)
-		(pin "2"
-			(uuid "86c211b5-5d46-4521-80a4-e00e06104a5f")
-		)
-		(instances
-			(project "High Temp Load Cell Toolhead Board"
-				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
-					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -22410,7 +22944,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth_Protective")
-		(at 504.19 264.16 0)
+		(at 504.19 262.255 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22419,7 +22953,7 @@
 		(fields_autoplaced yes)
 		(uuid "2cd49648-a215-4294-83e4-0779322f0a14")
 		(property "Reference" "#PWR083"
-			(at 504.19 274.32 0)
+			(at 504.19 272.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22428,7 +22962,7 @@
 			)
 		)
 		(property "Value" "Earth_Protective"
-			(at 504.19 273.05 0)
+			(at 504.19 271.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22436,7 +22970,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 504.19 266.7 0)
+			(at 504.19 264.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22445,7 +22979,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 504.19 266.7 0)
+			(at 504.19 264.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22454,7 +22988,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth_Protective\""
-			(at 504.19 264.16 0)
+			(at 504.19 262.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22463,7 +22997,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 504.19 264.16 0)
+			(at 504.19 262.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22870,17 +23404,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 404.495 194.31 90)
+		(lib_id "power:GND")
+		(at 480.06 193.675 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "30f3a6ae-1d17-4811-b92e-b0101a57bb43")
-		(property "Reference" "#PWR054"
-			(at 408.305 194.31 0)
+		(uuid "2f57635e-d923-4198-9197-912db718bde7")
+		(property "Reference" "#PWR0111"
+			(at 473.71 193.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22888,17 +23422,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 401.32 194.3099 90)
+		(property "Value" "GND"
+			(at 476.25 193.6749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 404.495 194.31 0)
+			(at 480.06 193.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22907,7 +23441,74 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 404.495 194.31 0)
+			(at 480.06 193.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 480.06 193.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9790ebbb-d3f8-4cf4-bd5d-d41b1df54240")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 404.495 192.405 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30f3a6ae-1d17-4811-b92e-b0101a57bb43")
+		(property "Reference" "#PWR054"
+			(at 408.305 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 401.32 192.4049 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 404.495 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 404.495 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22916,7 +23517,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 404.495 194.31 0)
+			(at 404.495 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22925,7 +23526,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 404.495 194.31 0)
+			(at 404.495 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25037,6 +25638,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 553.085 204.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "428e5f88-d4a7-4499-873c-3d20140a9d7c")
+		(property "Reference" "#PWR0110"
+			(at 553.085 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 553.085 208.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 553.085 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 553.085 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 553.085 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "346bc6b7-f384-407f-b8e3-4910fec12938")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 204.47 221.615 0)
 		(unit 1)
@@ -26174,7 +26841,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 404.495 208.28 90)
+		(at 404.495 206.375 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26183,7 +26850,7 @@
 		(fields_autoplaced yes)
 		(uuid "4da60a19-6aef-43e9-b7b8-2dbc89104cb9")
 		(property "Reference" "#PWR087"
-			(at 408.305 208.28 0)
+			(at 408.305 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26192,7 +26859,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 401.32 208.2799 90)
+			(at 401.32 206.3749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26201,7 +26868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 404.495 208.28 0)
+			(at 404.495 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26210,7 +26877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 404.495 208.28 0)
+			(at 404.495 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26219,7 +26886,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 404.495 208.28 0)
+			(at 404.495 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26228,7 +26895,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 404.495 208.28 0)
+			(at 404.495 206.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26735,7 +27402,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 521.97 245.11 0)
+		(at 521.97 243.205 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -26744,7 +27411,7 @@
 		(fields_autoplaced yes)
 		(uuid "579052e9-f7f6-49d6-9185-665d2d7c1c75")
 		(property "Reference" "H3"
-			(at 524.51 242.5699 0)
+			(at 524.51 240.6649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26753,7 +27420,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 524.51 245.1099 0)
+			(at 524.51 243.2049 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26762,7 +27429,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26771,7 +27438,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26780,7 +27447,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26789,7 +27456,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26798,7 +27465,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26807,7 +27474,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26816,7 +27483,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26825,7 +27492,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26834,7 +27501,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 521.97 245.11 0)
+			(at 521.97 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27200,7 +27867,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 486.41 251.46 0)
+		(at 486.41 249.555 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -27209,7 +27876,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e89bf52-178f-482d-8613-a938f9bd6294")
 		(property "Reference" "H2"
-			(at 488.95 248.9199 0)
+			(at 488.95 247.0149 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27218,7 +27885,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 488.95 251.4599 0)
+			(at 488.95 249.5549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27227,7 +27894,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27236,7 +27903,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27245,7 +27912,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27254,7 +27921,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27263,7 +27930,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27272,7 +27939,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27281,7 +27948,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27290,7 +27957,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27299,7 +27966,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 486.41 251.46 0)
+			(at 486.41 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27442,7 +28109,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 486.41 245.11 0)
+		(at 486.41 243.205 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -27451,7 +28118,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f548565-94c2-4fbb-a3a8-e85ddc55fd65")
 		(property "Reference" "H1"
-			(at 488.95 242.5699 0)
+			(at 488.95 240.6649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27460,7 +28127,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 488.95 245.1099 0)
+			(at 488.95 243.2049 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27469,7 +28136,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27478,7 +28145,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27487,7 +28154,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27496,7 +28163,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27505,7 +28172,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27514,7 +28181,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27523,7 +28190,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27532,7 +28199,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27541,7 +28208,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 486.41 245.11 0)
+			(at 486.41 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27823,7 +28490,7 @@
 	)
 	(symbol
 		(lib_id "Diode:SMAJ24CA")
-		(at 513.08 263.525 0)
+		(at 513.08 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27832,7 +28499,7 @@
 		(fields_autoplaced yes)
 		(uuid "607c4cab-117f-48ca-826f-22f778262ed6")
 		(property "Reference" "D3"
-			(at 513.08 257.175 0)
+			(at 513.08 255.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27840,7 +28507,7 @@
 			)
 		)
 		(property "Value" "SMAJ24A"
-			(at 513.08 259.715 0)
+			(at 513.08 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27848,7 +28515,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 513.08 268.605 0)
+			(at 513.08 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27857,7 +28524,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27866,7 +28533,7 @@
 			)
 		)
 		(property "Description" "400W bidirectional Transient Voltage Suppressor, 24.0Vr, SMA(DO-214AC)"
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27875,7 +28542,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27884,7 +28551,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/littelfuse-inc/SMAJ6-0A/762252"
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27893,7 +28560,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "LITTELFUSE"
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27902,7 +28569,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "SMAJ6A"
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27911,7 +28578,7 @@
 			)
 		)
 		(property "Part Number" "LITTELFUSE"
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27920,7 +28587,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "SMAJ6.0ALFCT-ND"
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27929,7 +28596,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27938,7 +28605,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27947,7 +28614,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 513.08 263.525 0)
+			(at 513.08 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28799,7 +29466,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 412.75 284.48 270)
+		(at 412.75 269.875 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28809,7 +29476,7 @@
 		(fields_autoplaced yes)
 		(uuid "6772c5f1-265b-4e5f-b3be-75c363787f6a")
 		(property "Reference" "R5"
-			(at 412.75 277.495 90)
+			(at 412.75 262.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28817,7 +29484,7 @@
 			)
 		)
 		(property "Value" "R2kΩ"
-			(at 412.75 280.035 90)
+			(at 412.75 265.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28825,7 +29492,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 412.75 286.258 90)
+			(at 412.75 271.653 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28834,7 +29501,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 412.75 284.48 0)
+			(at 412.75 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28843,7 +29510,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 412.75 281.305 90)
+			(at 412.75 266.7 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -28851,7 +29518,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 412.75 284.48 0)
+			(at 412.75 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28860,7 +29527,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 412.75 284.48 0)
+			(at 412.75 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28869,7 +29536,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 412.75 284.48 0)
+			(at 412.75 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28878,7 +29545,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 412.75 284.48 0)
+			(at 412.75 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28887,7 +29554,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 412.75 284.48 0)
+			(at 412.75 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28896,7 +29563,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 412.75 284.48 0)
+			(at 412.75 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29965,7 +30632,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 424.18 269.24 0)
+		(at 424.18 254.635 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29975,7 +30642,7 @@
 		(fields_autoplaced yes)
 		(uuid "7266c4c5-5976-4bb8-8ef9-0b251e4a32e7")
 		(property "Reference" "D13"
-			(at 425.7675 262.89 0)
+			(at 425.7675 248.285 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29983,7 +30650,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 425.7675 265.43 0)
+			(at 425.7675 250.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29991,7 +30658,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30000,7 +30667,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30009,7 +30676,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30018,7 +30685,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30027,7 +30694,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30036,7 +30703,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30045,7 +30712,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30054,7 +30721,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30063,7 +30730,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30072,7 +30739,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30081,7 +30748,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30090,7 +30757,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 424.18 269.24 0)
+			(at 424.18 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30108,6 +30775,82 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 523.24 193.675 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7509e8c3-0f17-41e2-b7b1-cb9dc5729a7b")
+		(property "Reference" "#PWR0112"
+			(at 519.43 193.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 527.05 193.6749 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 523.24 193.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 523.24 193.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 523.24 193.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Part_Number" ""
+			(at 523.24 193.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d09824d9-23e8-4c6c-b43d-c4a9eb5ab4ab")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -32356,7 +33099,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 521.97 267.97 0)
+		(at 521.97 266.065 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32365,7 +33108,7 @@
 		(fields_autoplaced yes)
 		(uuid "90c3438e-923b-47ce-b8be-bf2810f98ece")
 		(property "Reference" "#PWR071"
-			(at 521.97 274.32 0)
+			(at 521.97 272.415 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32374,7 +33117,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 521.97 273.05 0)
+			(at 521.97 271.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32382,7 +33125,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 521.97 267.97 0)
+			(at 521.97 266.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32391,7 +33134,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 521.97 267.97 0)
+			(at 521.97 266.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32400,7 +33143,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 521.97 267.97 0)
+			(at 521.97 266.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32409,7 +33152,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 521.97 267.97 0)
+			(at 521.97 266.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32506,7 +33249,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 424.815 194.31 0)
+		(at 424.815 192.405 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32516,7 +33259,7 @@
 		(fields_autoplaced yes)
 		(uuid "93292aee-1ea6-4575-a47e-95dade922b04")
 		(property "Reference" "D2"
-			(at 426.4025 187.96 0)
+			(at 426.4025 186.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32524,7 +33267,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 426.4025 190.5 0)
+			(at 426.4025 188.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32532,7 +33275,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32541,7 +33284,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32550,7 +33293,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32559,7 +33302,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32568,7 +33311,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32577,7 +33320,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32586,7 +33329,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32595,7 +33338,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32604,7 +33347,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32613,7 +33356,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32622,7 +33365,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32631,7 +33374,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 424.815 194.31 0)
+			(at 424.815 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33104,7 +33847,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 424.18 284.48 0)
+		(at 424.18 269.875 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33114,7 +33857,7 @@
 		(fields_autoplaced yes)
 		(uuid "9673352f-b736-483b-a1a9-6c173269364a")
 		(property "Reference" "D14"
-			(at 425.7675 278.13 0)
+			(at 425.7675 263.525 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33122,7 +33865,7 @@
 			)
 		)
 		(property "Value" "RED LED"
-			(at 425.7675 280.67 0)
+			(at 425.7675 266.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33130,7 +33873,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33139,7 +33882,7 @@
 			)
 		)
 		(property "Datasheet" "https://optoelectronics.liteon.com/upload/download/DS22-2005-077/LTST-C193KRKT-5A.PDF"
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33148,7 +33891,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33157,7 +33900,7 @@
 			)
 		)
 		(property "Supplier" "Digikey"
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33166,7 +33909,7 @@
 			)
 		)
 		(property "Supplier_Link" "https://www.digikey.com/en/products/detail/liteon/LTST-C193KRKT-5A/2356244"
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33175,7 +33918,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lite-On Inc."
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33184,7 +33927,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTST-C193KRKT-5A"
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33193,7 +33936,7 @@
 			)
 		)
 		(property "Part Number" "LTST-C193KRKT-5A"
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33202,7 +33945,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" "160-1830-1-ND"
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33211,7 +33954,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33220,7 +33963,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33229,7 +33972,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 424.18 284.48 0)
+			(at 424.18 269.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33591,7 +34334,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 412.75 269.24 270)
+		(at 412.75 254.635 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -33601,7 +34344,7 @@
 		(fields_autoplaced yes)
 		(uuid "9ac41151-b1ee-4fc1-b960-740e957b2aac")
 		(property "Reference" "R3"
-			(at 412.75 262.255 90)
+			(at 412.75 247.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33609,7 +34352,7 @@
 			)
 		)
 		(property "Value" "R2kΩ"
-			(at 412.75 264.795 90)
+			(at 412.75 250.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33617,7 +34360,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 412.75 271.018 90)
+			(at 412.75 256.413 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33626,7 +34369,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 412.75 269.24 0)
+			(at 412.75 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33635,7 +34378,7 @@
 			)
 		)
 		(property "Description" "50mW / 1%"
-			(at 412.75 266.065 90)
+			(at 412.75 251.46 90)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -33643,7 +34386,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 412.75 269.24 0)
+			(at 412.75 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33652,7 +34395,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 412.75 269.24 0)
+			(at 412.75 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33661,7 +34404,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 412.75 269.24 0)
+			(at 412.75 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33670,7 +34413,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 412.75 269.24 0)
+			(at 412.75 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33679,7 +34422,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 412.75 269.24 0)
+			(at 412.75 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33688,7 +34431,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 412.75 269.24 0)
+			(at 412.75 254.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36584,7 +37327,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 521.97 251.46 0)
+		(at 521.97 249.555 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -36593,7 +37336,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba2a48d7-7aff-4530-ba70-1a03db37d1fe")
 		(property "Reference" "H4"
-			(at 524.51 248.9199 0)
+			(at 524.51 247.0149 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36602,7 +37345,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 524.51 251.4599 0)
+			(at 524.51 249.5549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36611,7 +37354,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36620,7 +37363,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36629,7 +37372,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36638,7 +37381,7 @@
 			)
 		)
 		(property "Supplier" ""
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36647,7 +37390,7 @@
 			)
 		)
 		(property "Supplier_Link" ""
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36656,7 +37399,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36665,7 +37408,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36674,7 +37417,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36683,7 +37426,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 521.97 251.46 0)
+			(at 521.97 249.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37780,7 +38523,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 499.745 259.08 90)
+		(at 499.745 257.175 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -37789,7 +38532,7 @@
 		(dnp no)
 		(uuid "cb24fa4e-9c5c-48fc-9fea-77e6cc005fdf")
 		(property "Reference" "#FLG03"
-			(at 497.84 259.08 0)
+			(at 497.84 257.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37798,7 +38541,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 495.935 259.0799 90)
+			(at 495.935 257.1749 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37807,7 +38550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 499.745 259.08 0)
+			(at 499.745 257.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37816,7 +38559,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 499.745 259.08 0)
+			(at 499.745 257.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37825,7 +38568,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 499.745 259.08 0)
+			(at 499.745 257.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37834,7 +38577,7 @@
 			)
 		)
 		(property "Supplier_Part_Number" ""
-			(at 499.745 259.08 0)
+			(at 499.745 257.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40034,127 +40777,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 413.385 249.555 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eebe5682-8c1e-4730-8f08-de1549de55ed")
-		(property "Reference" "R29"
-			(at 413.385 242.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R1kΩ"
-			(at 413.385 245.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 413.385 247.777 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 413.385 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "50mW / 1%"
-			(at 413.385 246.38 90)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Supplier" ""
-			(at 413.385 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier_Link" ""
-			(at 413.385 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier_Part_Number" ""
-			(at 413.385 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 413.385 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 413.385 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 413.385 249.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a8dca36e-44d2-45ab-a4f8-6e38354f37dc")
-		)
-		(pin "1"
-			(uuid "ae81abb2-b05c-4d5f-a915-707c73004b8d")
-		)
-		(instances
-			(project "High Temp Load Cell Toolhead Board"
-				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
-					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5VA")
 		(at 518.795 36.83 0)
 		(unit 1)
@@ -40222,7 +40844,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 448.945 257.81 0)
+		(at 448.945 238.125 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -40231,7 +40853,7 @@
 		(fields_autoplaced yes)
 		(uuid "f322ddb2-6634-473d-ac8f-4f0ef99d4b80")
 		(property "Reference" "#PWR039"
-			(at 448.945 264.16 0)
+			(at 448.945 244.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40240,7 +40862,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 448.945 262.89 0)
+			(at 448.945 243.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40248,7 +40870,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 448.945 257.81 0)
+			(at 448.945 238.125 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40257,7 +40879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 448.945 257.81 0)
+			(at 448.945 238.125 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40266,7 +40888,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 448.945 257.81 0)
+			(at 448.945 238.125 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40714,7 +41336,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VA")
-		(at 404.495 222.25 90)
+		(at 404.495 220.345 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -40723,7 +41345,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa5ed29c-3c45-4f44-b235-9256e2754e7a")
 		(property "Reference" "#PWR020"
-			(at 408.305 222.25 0)
+			(at 408.305 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40732,7 +41354,7 @@
 			)
 		)
 		(property "Value" "+5VA"
-			(at 401.32 222.2499 90)
+			(at 401.32 220.3449 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40741,7 +41363,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 404.495 222.25 0)
+			(at 404.495 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40750,7 +41372,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 404.495 222.25 0)
+			(at 404.495 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40759,7 +41381,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VA\""
-			(at 404.495 222.25 0)
+			(at 404.495 220.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41309,6 +41931,171 @@
 			(project "High Temp Load Cell Toolhead Board"
 				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:APA102-2020")
+		(at 553.085 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdf11810-0c51-47e6-b594-027923e20069")
+		(property "Reference" "D16"
+			(at 555.2791 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DotStar Micro LED"
+			(at 555.2791 187.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED-APA102-2020"
+			(at 554.355 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/3341/3341_APA102-2020+SMD+LED.pdf"
+			(at 555.625 203.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "APA102-2020"
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "Adafruit"
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Link" "https://www.adafruit.com/product/3341"
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "APA102-2020"
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier_Part_Number" "APA102-2020"
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 553.085 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd286bff-70a4-4a12-a75a-833b7d9ab44f")
+		)
+		(pin "2"
+			(uuid "f710fa57-3d96-458a-a74e-eea1967515bb")
+		)
+		(pin "3"
+			(uuid "ddfc87a2-9b64-47a8-8e7e-4b70b21561c6")
+		)
+		(pin "4"
+			(uuid "cf87c78f-32af-489e-8cec-fe7c1eaacbbe")
+		)
+		(pin "5"
+			(uuid "e6ba4d26-d6f2-4ea5-ae54-f7602e293b32")
+		)
+		(pin "6"
+			(uuid "b6994d1d-ee21-46fa-8306-d062eef43da2")
+		)
+		(instances
+			(project "High Temp Load Cell Toolhead Board"
+				(path "/d7aad515-c17a-476a-b840-00742bfe5422"
+					(reference "D16")
 					(unit 1)
 				)
 			)

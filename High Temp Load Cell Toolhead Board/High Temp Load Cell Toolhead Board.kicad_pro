@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.8,
-          "width": 1.15
+          "height": 0.5,
+          "width": 1.48
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -68,7 +68,14 @@
           "width": 0.2286
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "via_dangling|51000000|19900000|14c2d051-3817-4d71-bcdb-594021eb1bb1|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|20700000|ec5f2e55-a61c-46b3-bb55-dec9da870cb3|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|21500000|3ba8738f-95bb-47ef-9b75-fcd85aed2e42|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|31800000|d3199580-430f-45ae-b937-9b1253bb223c|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|32600000|406eea5d-16ab-47a8-a3cb-8f1226db7e78|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|33400000|4af2b6e9-2d2b-4c84-a664-644e338af913|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -261,7 +268,15 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "label_dangling|901700|368300|cbe116e1-f776-448f-9a45-750a70c56377|00000000-0000-0000-0000-000000000000|/d7aad515-c17a-476a-b840-00742bfe5422||",
+      "lib_symbol_issues|1028700|317500|9fc0abfe-9f8b-45aa-b202-b67fa04f1c73|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|2997200|3536950|115486ba-6aa4-4102-b0eb-75762902ac2a|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|4019550|3536950|61e11b32-40c3-41ff-bca6-d27300b5ce95|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|5137150|635000|e8ef1c70-bc7c-4e39-9c60-716bc04afa3c|00000000-0000-0000-0000-000000000000|||",
+      "multiple_net_names|4864100|419100|a0adbe1d-9c87-40e9-b4e6-fea18574d49d|e2a20c51-e73f-441f-a0b4-d458b471155a|/d7aad515-c17a-476a-b840-00742bfe5422|/d7aad515-c17a-476a-b840-00742bfe5422|/d7aad515-c17a-476a-b840-00742bfe5422",
+      "multiple_net_names|4864100|838200|d832be13-f9a9-4062-897c-9f1e83f5753e|99e7feb7-9467-4ecc-b89f-6a5bae70d7b4|/d7aad515-c17a-476a-b840-00742bfe5422|/d7aad515-c17a-476a-b840-00742bfe5422|/d7aad515-c17a-476a-b840-00742bfe5422"
+    ],
     "meta": {
       "version": 0
     },
@@ -637,6 +652,22 @@
       {
         "netclass": "Digital Pair",
         "pattern": "USB_D*"
+      },
+      {
+        "netclass": "Digital Signal",
+        "pattern": "INDICATOR_LED_SDO"
+      },
+      {
+        "netclass": "Digital Signal",
+        "pattern": "INDICATOR_LED_CLK"
+      },
+      {
+        "netclass": "Digital Signal",
+        "pattern": "/RGB_INDICATOR_SDO"
+      },
+      {
+        "netclass": "Digital Signal",
+        "pattern": "/RGB_INDICATOR_CLK"
       }
     ]
   },
