@@ -9125,6 +9125,14 @@
 		(uuid "fefe0711-2f1e-498b-8749-ee2cfb254d36")
 	)
 	(no_connect
+		(at 138.43 221.615)
+		(uuid "03d9c84a-4cb3-46f1-bf53-4b430b0fa22b")
+	)
+	(no_connect
+		(at 105.41 216.535)
+		(uuid "05fd2374-cdef-4b2e-a515-1a90e87d720f")
+	)
+	(no_connect
 		(at 67.945 317.5)
 		(uuid "1200b1ec-5b35-423a-a838-bf17f9bd61b0")
 	)
@@ -9161,10 +9169,6 @@
 		(uuid "4f408e31-30b6-43ef-82da-9bf91df29417")
 	)
 	(no_connect
-		(at 138.43 201.295)
-		(uuid "525c3a5c-b336-4221-b5e6-ec8040cd00cb")
-	)
-	(no_connect
 		(at 105.41 239.395)
 		(uuid "54bbd751-b3d7-4830-90b2-daecfa101076")
 	)
@@ -9187,10 +9191,6 @@
 	(no_connect
 		(at 138.43 183.515)
 		(uuid "8b17e4f3-6bab-42cf-9c0f-5078198f840c")
-	)
-	(no_connect
-		(at 138.43 198.755)
-		(uuid "9318a65d-eec0-405c-9993-db96f612669b")
 	)
 	(no_connect
 		(at 560.705 191.77)
@@ -9275,6 +9275,16 @@
 			(type default)
 		)
 		(uuid "03a44882-6e39-4c41-9771-e0c34458295e")
+	)
+	(wire
+		(pts
+			(xy 140.335 198.755) (xy 138.43 198.755)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03b899fa-14a4-47e7-8cbd-d1d020263d31")
 	)
 	(wire
 		(pts
@@ -9845,16 +9855,6 @@
 			(type default)
 		)
 		(uuid "1fdf1fe8-c0bb-4d3c-b196-1eaa848ca7db")
-	)
-	(wire
-		(pts
-			(xy 105.41 216.535) (xy 103.505 216.535)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "204bc148-d891-4429-8cbb-4f9213e47b1f")
 	)
 	(wire
 		(pts
@@ -11835,6 +11835,16 @@
 			(type default)
 		)
 		(uuid "7d1c2112-6e53-42a1-86de-fe3efa930bf6")
+	)
+	(wire
+		(pts
+			(xy 140.335 201.295) (xy 138.43 201.295)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d97f510-c48d-488a-b5fe-103a86cd223e")
 	)
 	(wire
 		(pts
@@ -13948,16 +13958,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.335 221.615) (xy 138.43 221.615)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8d9559c-a91d-4732-b3e5-b6e37a9225cd")
-	)
-	(wire
-		(pts
 			(xy 52.705 180.34) (xy 52.705 195.58)
 		)
 		(stroke
@@ -15015,6 +15015,7 @@
 					(italic yes)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 	)
@@ -15276,6 +15277,7 @@
 					(italic yes)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 	)
@@ -15701,6 +15703,7 @@
 					(italic yes)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 	)
@@ -15733,6 +15736,7 @@
 					(italic yes)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 	)
@@ -16159,6 +16163,28 @@
 			)
 		)
 	)
+	(global_label "HEATBREAK_THERMISTOR"
+		(shape input)
+		(at 140.335 198.755 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35d9d214-fa0c-4705-bf23-47e55d0d988a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.422 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB_PULL_UP"
 		(shape input)
 		(at 404.495 234.315 180)
@@ -16234,28 +16260,6 @@
 			)
 		)
 	)
-	(global_label "HEATBREAK_THERMISTOR"
-		(shape input)
-		(at 103.505 213.995 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "514b72b2-35b7-422b-99e4-03568505c2b0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.418 213.995 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "FAN1_TACH"
 		(shape input)
 		(at 433.705 361.315 180)
@@ -16278,7 +16282,29 @@
 			)
 		)
 	)
-	(global_label "LED_MCU_SDO"
+	(global_label "FILAMENT_SW"
+		(shape input)
+		(at 140.335 201.295 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "57edb076-55bc-44b6-a452-11b38e28dac6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.6573 201.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DOTSTAR_LED_DATA"
 		(shape input)
 		(at 103.505 226.695 180)
 		(fields_autoplaced yes)
@@ -16318,28 +16344,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "AMBIENT_THERMISTOR"
-		(shape input)
-		(at 103.505 216.535 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6bf3df88-3944-45d0-bca4-25de43ffd586")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.1394 216.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -16398,7 +16402,7 @@
 			)
 		)
 	)
-	(global_label "INDICATOR_LED_CLK"
+	(global_label "RGB_LED_CLOCK"
 		(shape input)
 		(at 140.335 203.835 0)
 		(fields_autoplaced yes)
@@ -16624,28 +16628,6 @@
 			)
 		)
 	)
-	(global_label "FILAMENT_SW"
-		(shape input)
-		(at 140.335 221.615 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a01fe062-3dd8-4669-9039-30296e5bf023")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.6573 221.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SW_CLK"
 		(shape input)
 		(at 140.335 219.075 0)
@@ -16732,7 +16714,7 @@
 			)
 		)
 	)
-	(global_label "LED_MCU_CLK"
+	(global_label "DOTSTAR_LED_CLOCK"
 		(shape input)
 		(at 103.505 229.235 180)
 		(fields_autoplaced yes)
@@ -16776,7 +16758,7 @@
 			)
 		)
 	)
-	(global_label "INDICATOR_LED_SDO"
+	(global_label "RGB_LED_DATA"
 		(shape input)
 		(at 140.335 206.375 0)
 		(fields_autoplaced yes)
@@ -16874,6 +16856,28 @@
 			)
 		)
 	)
+	(global_label "AMBIENT_THERMISTOR"
+		(shape input)
+		(at 103.505 213.995 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bb8d2112-b945-49e5-8560-c54f2d98cb0d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.1394 213.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SW_CLK"
 		(shape input)
 		(at 95.25 355.6 0)
@@ -16950,7 +16954,7 @@
 			)
 		)
 	)
-	(global_label "INDICATOR_LED_CLK"
+	(global_label "RGB_LED_CLOCK"
 		(shape input)
 		(at 480.06 191.135 180)
 		(fields_autoplaced yes)
@@ -17239,7 +17243,7 @@
 			)
 		)
 	)
-	(global_label "LED_MCU_SDO"
+	(global_label "DOTSTAR_LED_DATA"
 		(shape input)
 		(at 288.29 52.705 180)
 		(fields_autoplaced yes)
@@ -17293,7 +17297,7 @@
 			)
 		)
 	)
-	(global_label "INDICATOR_LED_SDO"
+	(global_label "RGB_LED_DATA"
 		(shape input)
 		(at 480.06 196.215 180)
 		(fields_autoplaced yes)
@@ -17315,7 +17319,7 @@
 			)
 		)
 	)
-	(global_label "LED_MCU_CLK"
+	(global_label "DOTSTAR_LED_CLOCK"
 		(shape input)
 		(at 288.29 57.785 180)
 		(fields_autoplaced yes)

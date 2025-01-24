@@ -68,7 +68,14 @@
           "width": 0.2286
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "via_dangling|51000000|19900000|14c2d051-3817-4d71-bcdb-594021eb1bb1|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|20700000|ec5f2e55-a61c-46b3-bb55-dec9da870cb3|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|21500000|3ba8738f-95bb-47ef-9b75-fcd85aed2e42|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|31800000|d3199580-430f-45ae-b937-9b1253bb223c|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|32600000|406eea5d-16ab-47a8-a3cb-8f1226db7e78|00000000-0000-0000-0000-000000000000",
+        "via_dangling|51000000|33400000|4af2b6e9-2d2b-4c84-a664-644e338af913|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -596,6 +603,8 @@
       "ADXL345_CS": "Digital Signal",
       "AMBIENT_THERMISTOR": "ADC Signal",
       "BOOT0": "Digital Signal",
+      "DOTSTAR_LED_CLOCK": "Digital Signal",
+      "DOTSTAR_LED_DATA": "Digital Signal",
       "FAN0_PWM": "Digital Signal",
       "FAN0_TACH": "Digital Signal",
       "FAN1_PWM": "Digital Signal",
@@ -653,6 +662,10 @@
       {
         "netclass": "Digital Signal",
         "pattern": "/RGB_INDICATOR_CLK"
+      },
+      {
+        "netclass": "ADC Signal",
+        "pattern": "AMBIENT_THERMISTOR"
       }
     ]
   },
