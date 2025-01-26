@@ -5,27 +5,24 @@ Because of the chamber temperature the 2 main parts that are most susceptible to
 
 ## Features
 
-* 1 x 6 pin CLIK-Mate connector to bring in USB data, 12-24V power and your choice of fan voltage.
+* 1 x 6 pin connector to bring in USB data, 12-24V power and your choice of fan voltage.
 * 1 x 4 pin port for full bridge load cells using the ADS1220 ADC sensor
 * 2 x 3 pin Fan ports with RPM monitoring (Heatbreak Cooler & Part Cooler). Max 2A power draw for the fans, limited by the input pin.
-* 1 x 2 pin PTC100 port for Hot End temperature using the MAX31865 RTD Sensor (can alternatly be built for PT1000)
-* 1 x 2 pin NTC thermistor port for Heatbreak temperature monitoring
-* 1 x 4 pin Neopixel/Dotstar port for illuminating the print are supplied with 5V/500mA for toolhead lighting
+* 2 x 2 pin thermistor ports for Hot End (using PT1000 or NTC) and Heatbreak temperature monitoring
 * On board NTC thermistor for board/ambient temperature monitoring
+* 1 x 4 pin Neopixel/Dotstar port for illuminating the print are supplied with 5V/500mA for toolhead lighting
 * On board power conversion from 12V to 5V and 3.3V using a buck converter module and two LDOs for ADC reference level DC power supply. (Does not reley on your 5V or 3.3V source being noise free)
-* USB communication via wire pair in the main connector (no separate USB connector)
+* USB communication via wire pair in the main connector (no separate USB connector required)
+* USBC Port for debugging, bench running and updates
 * STM32 F103 Core M3 CPU @72Mhz
-* Singe wire debug port for flashing the MCU with [Katapult](https://github.com/Arksine/katapult)
+* Single wire debug (SWD) port for flashing the MCU with [Katapult](https://github.com/Arksine/katapult)
 * Reset button
 * MCU Boot indicator LED - also indicates USB full speed pull-up enabled
 * Activity LEDs for both fans, 5V and 3.3V power
-* Molex CLIK-Mate connectors. Support up to 2A of current and are much nicer to use vs JST alternatives.
-* ESD protection on all I/O pins.
+* DotStar Micro LED for indicating whatgever you want to users
+* Molex CLIK-Mate connectors. Support up to 2A of current per pin and are much nicer to use vs JST alternatives.
+* ESD protection (TVS diodes) on all I/O pins.
 * Guard Ring for ESD protection and grounding to chassis
-
-## Squaks / TODO
-This section is a TODO list of issues and subjects not yet thought through:
-* Double/Tripple check the pin assignments on the MCU for all pins. PWM, ADC, SPI etc.
 
 ## References
 You cant learn anything quickly without looking at the work of others. I specifically want to credit:
